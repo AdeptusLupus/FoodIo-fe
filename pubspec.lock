@@ -75,12 +75,12 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  food_io_lib:
+  foodio_lib:
     dependency: "direct main"
     description:
       path: "."
       ref: HEAD
-      resolved-ref: e894a0a417b008ef99e1137090cfa2d0af9df7f6
+      resolved-ref: b1832f12d00eb51555f4de12ea8c3b21da452cab
       url: "https://github.com/AdeptusLupus/FoodIo-fe-lib.git"
     source: git
     version: "0.0.1"
