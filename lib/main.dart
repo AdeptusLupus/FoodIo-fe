@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodio/ui/pages/home.dart';
+import 'package:foodio/ui/pages/home/home.dart';
 
 void main() {
   runApp(const MyApp());
