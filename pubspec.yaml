@@ -31,15 +31,25 @@ dependencies:
   flutter:
     sdk: flutter
 
-  foodio_lib:
-    path: ./UI
-    # git:
-    #   url: https://github.com/AdeptusLupus/FoodIo-fe-lib.git
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   google_fonts: ^6.3.2
+  json_annotation: ^4.9.0
+  flutter_bloc: ^9.1.1
+  freezed_annotation: ^3.1.0
+  get_it: ^9.0.5
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  dio: ^5.9.0
+  ferry: ^0.16.2-dev.4
+  ferry_cache: ^0.10.1-dev.0+1
+  ferry_exec: ^0.8.0-dev.0
+  ferry_store: ^0.6.1
+  ferry_hive_store: ^0.6.0+1
+  normalize: ^0.10.0
+  gql_http_link: ^1.2.0
+  gql_code_builder_serializers: ^0.1.0+1
 
 dev_dependencies:
   flutter_test:
@@ -51,6 +61,10 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  freezed: ^3.2.3
+  json_serializable: ^6.11.1
+  build_runner: ^2.7.1
+  ferry_generator: ^0.14.0-dev.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

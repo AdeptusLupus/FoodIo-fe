@@ -4,11 +4,17 @@ class FConstants {
 }
 
 class _FSpacing {
+  /// 2.0px
+  final double xxs = 2.0;
+
   /// 4.0 px
   final double xs = 4.0;
 
   /// 8.0 px
   final double sm = 8.0;
+
+  /// 10.0 px
+  final double normal = 10.0;
 
   /// 16.0 px
   final double md = 16.0;

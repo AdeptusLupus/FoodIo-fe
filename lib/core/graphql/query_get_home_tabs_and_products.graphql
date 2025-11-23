@@ -1,0 +1,23 @@
+query HomeTabsAndProducts {
+  abas(sort: ["order:asc", "id:asc"]) {
+    tab_name
+    type
+    produtos {
+      name
+      description
+      price
+      descounted_price
+      publishedAt
+      is_optional
+      is_multiselect
+      images {
+        name
+        size
+        url
+        width
+        height
+        previewUrl
+      }
+    }
+  }
+}
