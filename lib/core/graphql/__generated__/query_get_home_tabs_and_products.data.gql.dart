@@ -57,7 +57,6 @@ abstract class GHomeTabsAndProductsData_abas
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String get tab_name;
-  _i2.GENUM_ABA_TYPE get type;
   BuiltList<GHomeTabsAndProductsData_abas_produtos?> get produtos;
   static Serializer<GHomeTabsAndProductsData_abas> get serializer =>
       _$gHomeTabsAndProductsDataAbasSerializer;

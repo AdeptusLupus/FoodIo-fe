@@ -14,7 +14,8 @@ Serializers _$serializers =
           ..add(GBooleanFilterInput.serializer)
           ..add(GDateTime.serializer)
           ..add(GDateTimeFilterInput.serializer)
-          ..add(GENUM_ABA_TYPE.serializer)
+          ..add(GExtraFiltersInput.serializer)
+          ..add(GExtraInput.serializer)
           ..add(GFileInfoInput.serializer)
           ..add(GFloatFilterInput.serializer)
           ..add(GHomeTabsAndProductsData.serializer)
@@ -36,9 +37,7 @@ Serializers _$serializers =
           ..add(GReviewWorkflowsWorkflowInput.serializer)
           ..add(GReviewWorkflowsWorkflowStageFiltersInput.serializer)
           ..add(GReviewWorkflowsWorkflowStageInput.serializer)
-          ..add(GSettingInput.serializer)
           ..add(GStringFilterInput.serializer)
-          ..add(GTime.serializer)
           ..add(GUploadFileFiltersInput.serializer)
           ..add(GUsersPermissionsLoginInput.serializer)
           ..add(GUsersPermissionsPermissionFiltersInput.serializer)
@@ -88,6 +87,18 @@ Serializers _$serializers =
               const FullType.nullable(GDateTime),
             ]),
             () => ListBuilder<GDateTime?>(),
+          )
+          ..addBuilderFactory(
+            const FullType(BuiltList, const [
+              const FullType.nullable(GExtraFiltersInput),
+            ]),
+            () => ListBuilder<GExtraFiltersInput?>(),
+          )
+          ..addBuilderFactory(
+            const FullType(BuiltList, const [
+              const FullType.nullable(GExtraFiltersInput),
+            ]),
+            () => ListBuilder<GExtraFiltersInput?>(),
           )
           ..addBuilderFactory(
             const FullType(BuiltList, const [

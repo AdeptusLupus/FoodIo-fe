@@ -16,6 +16,8 @@ class FExpandableAppBarWithTabs extends StatefulWidget {
     required this.subtitle,
     required this.backgroundImageUrl,
     required this.logoImageUrl,
+    required this.onTabTap,
+    required this.tabController,
   });
 
   final double appBarExpandedHeight;
@@ -27,6 +29,9 @@ class FExpandableAppBarWithTabs extends StatefulWidget {
 
   final String backgroundImageUrl;
   final String logoImageUrl;
+
+  final void Function(int index) onTabTap;
+  final TabController tabController;
 
   @override
   State<FExpandableAppBarWithTabs> createState() =>
@@ -45,12 +50,13 @@ class _FExpandableAppBarWithTabsState extends State<FExpandableAppBarWithTabs> {
       collapsedHeight: 0,
       toolbarHeight: 0,
       pinned: true,
-      // snap: false,
       bottom: PreferredSize(
         preferredSize: Size.fromHeight(widget.tabBarHeightAllocatedSize),
         child: Container(
           color: Colors.white,
           child: TabBar(
+            controller: widget.tabController,
+            onTap: widget.onTabTap,
             indicator: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.bottomCenter,

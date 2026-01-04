@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:foodio/core/services/service_register.dart';
 import 'package:foodio/ui/pages/home/home.dart';
 
-void main() {
+Future<void> main() async {
+  await registerServices();
+
   runApp(const MyApp());
 }
 

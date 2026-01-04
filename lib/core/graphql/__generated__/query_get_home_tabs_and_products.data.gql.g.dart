@@ -119,11 +119,6 @@ class _$GHomeTabsAndProductsData_abasSerializer
         object.tab_name,
         specifiedType: const FullType(String),
       ),
-      'type',
-      serializers.serialize(
-        object.type,
-        specifiedType: const FullType(_i2.GENUM_ABA_TYPE),
-      ),
       'produtos',
       serializers.serialize(
         object.produtos,
@@ -165,14 +160,6 @@ class _$GHomeTabsAndProductsData_abasSerializer
                     specifiedType: const FullType(String),
                   )!
                   as String;
-          break;
-        case 'type':
-          result.type =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(_i2.GENUM_ABA_TYPE),
-                  )!
-                  as _i2.GENUM_ABA_TYPE;
           break;
         case 'produtos':
           result.produtos.replace(
@@ -631,8 +618,6 @@ class _$GHomeTabsAndProductsData_abas extends GHomeTabsAndProductsData_abas {
   @override
   final String tab_name;
   @override
-  final _i2.GENUM_ABA_TYPE type;
-  @override
   final BuiltList<GHomeTabsAndProductsData_abas_produtos?> produtos;
 
   factory _$GHomeTabsAndProductsData_abas([
@@ -642,7 +627,6 @@ class _$GHomeTabsAndProductsData_abas extends GHomeTabsAndProductsData_abas {
   _$GHomeTabsAndProductsData_abas._({
     required this.G__typename,
     required this.tab_name,
-    required this.type,
     required this.produtos,
   }) : super._();
   @override
@@ -660,7 +644,6 @@ class _$GHomeTabsAndProductsData_abas extends GHomeTabsAndProductsData_abas {
     return other is GHomeTabsAndProductsData_abas &&
         G__typename == other.G__typename &&
         tab_name == other.tab_name &&
-        type == other.type &&
         produtos == other.produtos;
   }
 
@@ -669,7 +652,6 @@ class _$GHomeTabsAndProductsData_abas extends GHomeTabsAndProductsData_abas {
     var _$hash = 0;
     _$hash = $jc(_$hash, G__typename.hashCode);
     _$hash = $jc(_$hash, tab_name.hashCode);
-    _$hash = $jc(_$hash, type.hashCode);
     _$hash = $jc(_$hash, produtos.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
@@ -680,7 +662,6 @@ class _$GHomeTabsAndProductsData_abas extends GHomeTabsAndProductsData_abas {
     return (newBuiltValueToStringHelper(r'GHomeTabsAndProductsData_abas')
           ..add('G__typename', G__typename)
           ..add('tab_name', tab_name)
-          ..add('type', type)
           ..add('produtos', produtos))
         .toString();
   }
@@ -702,10 +683,6 @@ class GHomeTabsAndProductsData_abasBuilder
   String? get tab_name => _$this._tab_name;
   set tab_name(String? tab_name) => _$this._tab_name = tab_name;
 
-  _i2.GENUM_ABA_TYPE? _type;
-  _i2.GENUM_ABA_TYPE? get type => _$this._type;
-  set type(_i2.GENUM_ABA_TYPE? type) => _$this._type = type;
-
   ListBuilder<GHomeTabsAndProductsData_abas_produtos?>? _produtos;
   ListBuilder<GHomeTabsAndProductsData_abas_produtos?> get produtos =>
       _$this._produtos ??=
@@ -723,7 +700,6 @@ class GHomeTabsAndProductsData_abasBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _tab_name = $v.tab_name;
-      _type = $v.type;
       _produtos = $v.produtos.toBuilder();
       _$v = null;
     }
@@ -758,11 +734,6 @@ class GHomeTabsAndProductsData_abasBuilder
               tab_name,
               r'GHomeTabsAndProductsData_abas',
               'tab_name',
-            ),
-            type: BuiltValueNullFieldError.checkNotNull(
-              type,
-              r'GHomeTabsAndProductsData_abas',
-              'type',
             ),
             produtos: produtos.build(),
           );

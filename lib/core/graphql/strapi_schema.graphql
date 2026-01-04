@@ -13,9 +13,6 @@ A date-time string at UTC, such as 2007-12-03T10:15:30Z, compliant with the `dat
 """
 scalar DateTime
 
-"""A time string with format HH:mm:ss.SSS"""
-scalar Time
-
 type Pagination {
   total: Int!
   page: Int!
@@ -205,148 +202,6 @@ input JSONFilterInput {
   in: [JSON]
   notIn: [JSON]
   between: [JSON]
-}
-
-enum ENUM_ABA_TYPE {
-  Escolhido_a_mao
-  Promocoes
-  Pratos_Principais
-  Entradas
-  Acompanhamentos
-  Combo
-  Burgers
-  Pizzas_Grandes
-  Pizzas_Medias
-  Pizzas_Pequenas
-  Pizzas_Tradicionais
-  Bebidas
-  Novos
-  Recentes
-  Outros
-}
-
-input AbaFiltersInput {
-  documentId: IDFilterInput
-  tab_name: StringFilterInput
-  type: StringFilterInput
-  produtos: ProdutoFiltersInput
-  createdAt: DateTimeFilterInput
-  updatedAt: DateTimeFilterInput
-  publishedAt: DateTimeFilterInput
-  and: [AbaFiltersInput]
-  or: [AbaFiltersInput]
-  not: AbaFiltersInput
-}
-
-input AbaInput {
-  tab_name: String
-  type: ENUM_ABA_TYPE
-  produtos: [ID]
-  publishedAt: DateTime
-}
-
-type Aba {
-  documentId: ID!
-  tab_name: String!
-  type: ENUM_ABA_TYPE!
-  produtos_connection(filters: ProdutoFiltersInput, pagination: PaginationArg = {}, sort: [String] = []): ProdutoRelationResponseCollection
-  produtos(filters: ProdutoFiltersInput, pagination: PaginationArg = {}, sort: [String] = []): [Produto]!
-  createdAt: DateTime
-  updatedAt: DateTime
-  publishedAt: DateTime
-}
-
-type AbaEntityResponseCollection {
-  nodes: [Aba!]!
-  pageInfo: Pagination!
-}
-
-type AbaRelationResponseCollection {
-  nodes: [Aba!]!
-}
-
-input ProdutoFiltersInput {
-  documentId: IDFilterInput
-  name: StringFilterInput
-  description: StringFilterInput
-  price: FloatFilterInput
-  descounted_price: FloatFilterInput
-  is_optional: BooleanFilterInput
-  is_multiselect: BooleanFilterInput
-  abas: AbaFiltersInput
-  createdAt: DateTimeFilterInput
-  updatedAt: DateTimeFilterInput
-  publishedAt: DateTimeFilterInput
-  and: [ProdutoFiltersInput]
-  or: [ProdutoFiltersInput]
-  not: ProdutoFiltersInput
-}
-
-input ProdutoInput {
-  name: String
-  description: String
-  price: Float
-  descounted_price: Float
-  images: [ID]
-  is_optional: Boolean
-  is_multiselect: Boolean
-  abas: [ID]
-  publishedAt: DateTime
-}
-
-type Produto {
-  documentId: ID!
-  name: String!
-  description: String!
-  price: Float
-  descounted_price: Float
-  images_connection(filters: UploadFileFiltersInput, pagination: PaginationArg = {}, sort: [String] = []): UploadFileRelationResponseCollection
-  images(filters: UploadFileFiltersInput, pagination: PaginationArg = {}, sort: [String] = []): [UploadFile]!
-  is_optional: Boolean
-  is_multiselect: Boolean
-  abas_connection(filters: AbaFiltersInput, pagination: PaginationArg = {}, sort: [String] = []): AbaRelationResponseCollection
-  abas(filters: AbaFiltersInput, pagination: PaginationArg = {}, sort: [String] = []): [Aba]!
-  createdAt: DateTime
-  updatedAt: DateTime
-  publishedAt: DateTime
-}
-
-type ProdutoEntityResponseCollection {
-  nodes: [Produto!]!
-  pageInfo: Pagination!
-}
-
-type ProdutoRelationResponseCollection {
-  nodes: [Produto!]!
-}
-
-input SettingInput {
-  banner: ID
-  name: String
-  logo: ID
-  color: String
-  address: String
-  phone_number: String
-  email: String
-  open_at: Time
-  close_at: Time
-  publishedAt: DateTime
-}
-
-type Setting {
-  documentId: ID!
-  banner: UploadFile
-  name: String
-  logo: UploadFile
-  color: String
-  address: String
-  phone_number: String
-  email: String
-  open_at: Time
-  close_at: Time
-  createdAt: DateTime
-  updatedAt: DateTime
-  publishedAt: DateTime
 }
 
 input UploadFileFiltersInput {
@@ -629,7 +484,137 @@ type UsersPermissionsUserRelationResponseCollection {
   nodes: [UsersPermissionsUser!]!
 }
 
-union GenericMorph = Aba | Produto | Setting | UploadFile | I18NLocale | ReviewWorkflowsWorkflow | ReviewWorkflowsWorkflowStage | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsUser
+input AbaFiltersInput {
+  documentId: IDFilterInput
+  tab_name: StringFilterInput
+  produtos: ProdutoFiltersInput
+  order: IntFilterInput
+  createdAt: DateTimeFilterInput
+  updatedAt: DateTimeFilterInput
+  publishedAt: DateTimeFilterInput
+  and: [AbaFiltersInput]
+  or: [AbaFiltersInput]
+  not: AbaFiltersInput
+}
+
+input AbaInput {
+  tab_name: String
+  produtos: [ID]
+  order: Int
+  publishedAt: DateTime
+}
+
+type Aba {
+  documentId: ID!
+  tab_name: String!
+  produtos_connection(filters: ProdutoFiltersInput, pagination: PaginationArg = {}, sort: [String] = []): ProdutoRelationResponseCollection
+  produtos(filters: ProdutoFiltersInput, pagination: PaginationArg = {}, sort: [String] = []): [Produto]!
+  order: Int!
+  createdAt: DateTime
+  updatedAt: DateTime
+  publishedAt: DateTime
+}
+
+type AbaEntityResponseCollection {
+  nodes: [Aba!]!
+  pageInfo: Pagination!
+}
+
+type AbaRelationResponseCollection {
+  nodes: [Aba!]!
+}
+
+input ExtraFiltersInput {
+  documentId: IDFilterInput
+  name: StringFilterInput
+  price: FloatFilterInput
+  isAvailable: BooleanFilterInput
+  createdAt: DateTimeFilterInput
+  updatedAt: DateTimeFilterInput
+  publishedAt: DateTimeFilterInput
+  and: [ExtraFiltersInput]
+  or: [ExtraFiltersInput]
+  not: ExtraFiltersInput
+}
+
+input ExtraInput {
+  name: String
+  price: Float
+  isAvailable: Boolean
+  publishedAt: DateTime
+}
+
+type Extra {
+  documentId: ID!
+  name: String!
+  price: Float
+  isAvailable: Boolean!
+  createdAt: DateTime
+  updatedAt: DateTime
+  publishedAt: DateTime
+}
+
+type ExtraEntityResponseCollection {
+  nodes: [Extra!]!
+  pageInfo: Pagination!
+}
+
+input ProdutoFiltersInput {
+  documentId: IDFilterInput
+  name: StringFilterInput
+  description: StringFilterInput
+  price: FloatFilterInput
+  descounted_price: FloatFilterInput
+  is_optional: BooleanFilterInput
+  is_multiselect: BooleanFilterInput
+  abas: AbaFiltersInput
+  createdAt: DateTimeFilterInput
+  updatedAt: DateTimeFilterInput
+  publishedAt: DateTimeFilterInput
+  and: [ProdutoFiltersInput]
+  or: [ProdutoFiltersInput]
+  not: ProdutoFiltersInput
+}
+
+input ProdutoInput {
+  name: String
+  description: String
+  price: Float
+  descounted_price: Float
+  images: [ID]
+  is_optional: Boolean
+  is_multiselect: Boolean
+  abas: [ID]
+  publishedAt: DateTime
+}
+
+type Produto {
+  documentId: ID!
+  name: String!
+  description: String!
+  price: Float
+  descounted_price: Float
+  images_connection(filters: UploadFileFiltersInput, pagination: PaginationArg = {}, sort: [String] = []): UploadFileRelationResponseCollection
+  images(filters: UploadFileFiltersInput, pagination: PaginationArg = {}, sort: [String] = []): [UploadFile]!
+  is_optional: Boolean
+  is_multiselect: Boolean
+  abas_connection(filters: AbaFiltersInput, pagination: PaginationArg = {}, sort: [String] = []): AbaRelationResponseCollection
+  abas(filters: AbaFiltersInput, pagination: PaginationArg = {}, sort: [String] = []): [Aba]!
+  createdAt: DateTime
+  updatedAt: DateTime
+  publishedAt: DateTime
+}
+
+type ProdutoEntityResponseCollection {
+  nodes: [Produto!]!
+  pageInfo: Pagination!
+}
+
+type ProdutoRelationResponseCollection {
+  nodes: [Produto!]!
+}
+
+union GenericMorph = UploadFile | I18NLocale | ReviewWorkflowsWorkflow | ReviewWorkflowsWorkflowStage | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsUser | Aba | Extra | Produto
 
 input FileInfoInput {
   name: String
@@ -695,13 +680,6 @@ input PaginationArg {
 }
 
 type Query {
-  aba(documentId: ID!, status: PublicationStatus = PUBLISHED): Aba
-  abas_connection(filters: AbaFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): AbaEntityResponseCollection
-  abas(filters: AbaFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): [Aba]!
-  produto(documentId: ID!, status: PublicationStatus = PUBLISHED): Produto
-  produtos_connection(filters: ProdutoFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): ProdutoEntityResponseCollection
-  produtos(filters: ProdutoFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): [Produto]!
-  setting(status: PublicationStatus = PUBLISHED): Setting
   uploadFile(documentId: ID!, status: PublicationStatus = PUBLISHED): UploadFile
   uploadFiles_connection(filters: UploadFileFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): UploadFileEntityResponseCollection
   uploadFiles(filters: UploadFileFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): [UploadFile]!
@@ -720,24 +698,34 @@ type Query {
   usersPermissionsUser(documentId: ID!, status: PublicationStatus = PUBLISHED): UsersPermissionsUser
   usersPermissionsUsers_connection(filters: UsersPermissionsUserFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): UsersPermissionsUserEntityResponseCollection
   usersPermissionsUsers(filters: UsersPermissionsUserFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): [UsersPermissionsUser]!
+  aba(documentId: ID!, status: PublicationStatus = PUBLISHED): Aba
+  abas_connection(filters: AbaFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): AbaEntityResponseCollection
+  abas(filters: AbaFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): [Aba]!
+  extra(documentId: ID!, status: PublicationStatus = PUBLISHED): Extra
+  extras_connection(filters: ExtraFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): ExtraEntityResponseCollection
+  extras(filters: ExtraFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): [Extra]!
+  produto(documentId: ID!, status: PublicationStatus = PUBLISHED): Produto
+  produtos_connection(filters: ProdutoFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): ProdutoEntityResponseCollection
+  produtos(filters: ProdutoFiltersInput, pagination: PaginationArg = {}, sort: [String] = [], status: PublicationStatus = PUBLISHED): [Produto]!
   me: UsersPermissionsMe
 }
 
 type Mutation {
-  createAba(status: PublicationStatus = PUBLISHED, data: AbaInput!): Aba
-  updateAba(documentId: ID!, status: PublicationStatus = PUBLISHED, data: AbaInput!): Aba
-  deleteAba(documentId: ID!): DeleteMutationResponse
-  createProduto(status: PublicationStatus = PUBLISHED, data: ProdutoInput!): Produto
-  updateProduto(documentId: ID!, status: PublicationStatus = PUBLISHED, data: ProdutoInput!): Produto
-  deleteProduto(documentId: ID!): DeleteMutationResponse
-  updateSetting(status: PublicationStatus = PUBLISHED, data: SettingInput!): Setting
-  deleteSetting: DeleteMutationResponse
   createReviewWorkflowsWorkflow(status: PublicationStatus = PUBLISHED, data: ReviewWorkflowsWorkflowInput!): ReviewWorkflowsWorkflow
   updateReviewWorkflowsWorkflow(documentId: ID!, status: PublicationStatus = PUBLISHED, data: ReviewWorkflowsWorkflowInput!): ReviewWorkflowsWorkflow
   deleteReviewWorkflowsWorkflow(documentId: ID!): DeleteMutationResponse
   createReviewWorkflowsWorkflowStage(status: PublicationStatus = PUBLISHED, data: ReviewWorkflowsWorkflowStageInput!): ReviewWorkflowsWorkflowStage
   updateReviewWorkflowsWorkflowStage(documentId: ID!, status: PublicationStatus = PUBLISHED, data: ReviewWorkflowsWorkflowStageInput!): ReviewWorkflowsWorkflowStage
   deleteReviewWorkflowsWorkflowStage(documentId: ID!): DeleteMutationResponse
+  createAba(status: PublicationStatus = PUBLISHED, data: AbaInput!): Aba
+  updateAba(documentId: ID!, status: PublicationStatus = PUBLISHED, data: AbaInput!): Aba
+  deleteAba(documentId: ID!): DeleteMutationResponse
+  createExtra(status: PublicationStatus = PUBLISHED, data: ExtraInput!): Extra
+  updateExtra(documentId: ID!, status: PublicationStatus = PUBLISHED, data: ExtraInput!): Extra
+  deleteExtra(documentId: ID!): DeleteMutationResponse
+  createProduto(status: PublicationStatus = PUBLISHED, data: ProdutoInput!): Produto
+  updateProduto(documentId: ID!, status: PublicationStatus = PUBLISHED, data: ProdutoInput!): Produto
+  deleteProduto(documentId: ID!): DeleteMutationResponse
   updateUploadFile(id: ID!, info: FileInfoInput): UploadFile!
   deleteUploadFile(id: ID!): UploadFile
 

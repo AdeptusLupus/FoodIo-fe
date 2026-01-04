@@ -29,98 +29,6 @@ final BuiltSet<GPublicationStatus> _$gPublicationStatusValues =
       _$gPublicationStatusPUBLISHED,
     ]);
 
-const GENUM_ABA_TYPE _$gENUMABATYPEEscolhido_a_mao = const GENUM_ABA_TYPE._(
-  'Escolhido_a_mao',
-);
-const GENUM_ABA_TYPE _$gENUMABATYPEPromocoes = const GENUM_ABA_TYPE._(
-  'Promocoes',
-);
-const GENUM_ABA_TYPE _$gENUMABATYPEPratos_Principais = const GENUM_ABA_TYPE._(
-  'Pratos_Principais',
-);
-const GENUM_ABA_TYPE _$gENUMABATYPEEntradas = const GENUM_ABA_TYPE._(
-  'Entradas',
-);
-const GENUM_ABA_TYPE _$gENUMABATYPEAcompanhamentos = const GENUM_ABA_TYPE._(
-  'Acompanhamentos',
-);
-const GENUM_ABA_TYPE _$gENUMABATYPECombo = const GENUM_ABA_TYPE._('Combo');
-const GENUM_ABA_TYPE _$gENUMABATYPEBurgers = const GENUM_ABA_TYPE._('Burgers');
-const GENUM_ABA_TYPE _$gENUMABATYPEPizzas_Grandes = const GENUM_ABA_TYPE._(
-  'Pizzas_Grandes',
-);
-const GENUM_ABA_TYPE _$gENUMABATYPEPizzas_Medias = const GENUM_ABA_TYPE._(
-  'Pizzas_Medias',
-);
-const GENUM_ABA_TYPE _$gENUMABATYPEPizzas_Pequenas = const GENUM_ABA_TYPE._(
-  'Pizzas_Pequenas',
-);
-const GENUM_ABA_TYPE _$gENUMABATYPEPizzas_Tradicionais = const GENUM_ABA_TYPE._(
-  'Pizzas_Tradicionais',
-);
-const GENUM_ABA_TYPE _$gENUMABATYPEBebidas = const GENUM_ABA_TYPE._('Bebidas');
-const GENUM_ABA_TYPE _$gENUMABATYPENovos = const GENUM_ABA_TYPE._('Novos');
-const GENUM_ABA_TYPE _$gENUMABATYPERecentes = const GENUM_ABA_TYPE._(
-  'Recentes',
-);
-const GENUM_ABA_TYPE _$gENUMABATYPEOutros = const GENUM_ABA_TYPE._('Outros');
-
-GENUM_ABA_TYPE _$gENUMABATYPEValueOf(String name) {
-  switch (name) {
-    case 'Escolhido_a_mao':
-      return _$gENUMABATYPEEscolhido_a_mao;
-    case 'Promocoes':
-      return _$gENUMABATYPEPromocoes;
-    case 'Pratos_Principais':
-      return _$gENUMABATYPEPratos_Principais;
-    case 'Entradas':
-      return _$gENUMABATYPEEntradas;
-    case 'Acompanhamentos':
-      return _$gENUMABATYPEAcompanhamentos;
-    case 'Combo':
-      return _$gENUMABATYPECombo;
-    case 'Burgers':
-      return _$gENUMABATYPEBurgers;
-    case 'Pizzas_Grandes':
-      return _$gENUMABATYPEPizzas_Grandes;
-    case 'Pizzas_Medias':
-      return _$gENUMABATYPEPizzas_Medias;
-    case 'Pizzas_Pequenas':
-      return _$gENUMABATYPEPizzas_Pequenas;
-    case 'Pizzas_Tradicionais':
-      return _$gENUMABATYPEPizzas_Tradicionais;
-    case 'Bebidas':
-      return _$gENUMABATYPEBebidas;
-    case 'Novos':
-      return _$gENUMABATYPENovos;
-    case 'Recentes':
-      return _$gENUMABATYPERecentes;
-    case 'Outros':
-      return _$gENUMABATYPEOutros;
-    default:
-      throw ArgumentError(name);
-  }
-}
-
-final BuiltSet<GENUM_ABA_TYPE> _$gENUMABATYPEValues =
-    BuiltSet<GENUM_ABA_TYPE>(const <GENUM_ABA_TYPE>[
-      _$gENUMABATYPEEscolhido_a_mao,
-      _$gENUMABATYPEPromocoes,
-      _$gENUMABATYPEPratos_Principais,
-      _$gENUMABATYPEEntradas,
-      _$gENUMABATYPEAcompanhamentos,
-      _$gENUMABATYPECombo,
-      _$gENUMABATYPEBurgers,
-      _$gENUMABATYPEPizzas_Grandes,
-      _$gENUMABATYPEPizzas_Medias,
-      _$gENUMABATYPEPizzas_Pequenas,
-      _$gENUMABATYPEPizzas_Tradicionais,
-      _$gENUMABATYPEBebidas,
-      _$gENUMABATYPENovos,
-      _$gENUMABATYPERecentes,
-      _$gENUMABATYPEOutros,
-    ]);
-
 Serializer<GPublicationStatus> _$gPublicationStatusSerializer =
     _$GPublicationStatusSerializer();
 Serializer<GIDFilterInput> _$gIDFilterInputSerializer =
@@ -137,17 +45,6 @@ Serializer<GDateTimeFilterInput> _$gDateTimeFilterInputSerializer =
     _$GDateTimeFilterInputSerializer();
 Serializer<GJSONFilterInput> _$gJSONFilterInputSerializer =
     _$GJSONFilterInputSerializer();
-Serializer<GENUM_ABA_TYPE> _$gENUMABATYPESerializer =
-    _$GENUM_ABA_TYPESerializer();
-Serializer<GAbaFiltersInput> _$gAbaFiltersInputSerializer =
-    _$GAbaFiltersInputSerializer();
-Serializer<GAbaInput> _$gAbaInputSerializer = _$GAbaInputSerializer();
-Serializer<GProdutoFiltersInput> _$gProdutoFiltersInputSerializer =
-    _$GProdutoFiltersInputSerializer();
-Serializer<GProdutoInput> _$gProdutoInputSerializer =
-    _$GProdutoInputSerializer();
-Serializer<GSettingInput> _$gSettingInputSerializer =
-    _$GSettingInputSerializer();
 Serializer<GUploadFileFiltersInput> _$gUploadFileFiltersInputSerializer =
     _$GUploadFileFiltersInputSerializer();
 Serializer<GI18NLocaleFiltersInput> _$gI18NLocaleFiltersInputSerializer =
@@ -177,6 +74,16 @@ _$gUsersPermissionsUserFiltersInputSerializer =
     _$GUsersPermissionsUserFiltersInputSerializer();
 Serializer<GUsersPermissionsUserInput> _$gUsersPermissionsUserInputSerializer =
     _$GUsersPermissionsUserInputSerializer();
+Serializer<GAbaFiltersInput> _$gAbaFiltersInputSerializer =
+    _$GAbaFiltersInputSerializer();
+Serializer<GAbaInput> _$gAbaInputSerializer = _$GAbaInputSerializer();
+Serializer<GExtraFiltersInput> _$gExtraFiltersInputSerializer =
+    _$GExtraFiltersInputSerializer();
+Serializer<GExtraInput> _$gExtraInputSerializer = _$GExtraInputSerializer();
+Serializer<GProdutoFiltersInput> _$gProdutoFiltersInputSerializer =
+    _$GProdutoFiltersInputSerializer();
+Serializer<GProdutoInput> _$gProdutoInputSerializer =
+    _$GProdutoInputSerializer();
 Serializer<GFileInfoInput> _$gFileInfoInputSerializer =
     _$GFileInfoInputSerializer();
 Serializer<GUsersPermissionsRegisterInput>
@@ -3261,1128 +3168,6 @@ class _$GJSONFilterInputSerializer
   }
 }
 
-class _$GENUM_ABA_TYPESerializer
-    implements PrimitiveSerializer<GENUM_ABA_TYPE> {
-  @override
-  final Iterable<Type> types = const <Type>[GENUM_ABA_TYPE];
-  @override
-  final String wireName = 'GENUM_ABA_TYPE';
-
-  @override
-  Object serialize(
-    Serializers serializers,
-    GENUM_ABA_TYPE object, {
-    FullType specifiedType = FullType.unspecified,
-  }) => object.name;
-
-  @override
-  GENUM_ABA_TYPE deserialize(
-    Serializers serializers,
-    Object serialized, {
-    FullType specifiedType = FullType.unspecified,
-  }) => GENUM_ABA_TYPE.valueOf(serialized as String);
-}
-
-class _$GAbaFiltersInputSerializer
-    implements StructuredSerializer<GAbaFiltersInput> {
-  @override
-  final Iterable<Type> types = const [GAbaFiltersInput, _$GAbaFiltersInput];
-  @override
-  final String wireName = 'GAbaFiltersInput';
-
-  @override
-  Iterable<Object?> serialize(
-    Serializers serializers,
-    GAbaFiltersInput object, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    final result = <Object?>[];
-    Object? value;
-    value = object.documentId;
-    if (value != null) {
-      result
-        ..add('documentId')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GIDFilterInput),
-          ),
-        );
-    }
-    value = object.tab_name;
-    if (value != null) {
-      result
-        ..add('tab_name')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GStringFilterInput),
-          ),
-        );
-    }
-    value = object.type;
-    if (value != null) {
-      result
-        ..add('type')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GStringFilterInput),
-          ),
-        );
-    }
-    value = object.produtos;
-    if (value != null) {
-      result
-        ..add('produtos')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GProdutoFiltersInput),
-          ),
-        );
-    }
-    value = object.createdAt;
-    if (value != null) {
-      result
-        ..add('createdAt')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GDateTimeFilterInput),
-          ),
-        );
-    }
-    value = object.updatedAt;
-    if (value != null) {
-      result
-        ..add('updatedAt')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GDateTimeFilterInput),
-          ),
-        );
-    }
-    value = object.publishedAt;
-    if (value != null) {
-      result
-        ..add('publishedAt')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GDateTimeFilterInput),
-          ),
-        );
-    }
-    value = object.and;
-    if (value != null) {
-      result
-        ..add('and')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(GAbaFiltersInput),
-            ]),
-          ),
-        );
-    }
-    value = object.or;
-    if (value != null) {
-      result
-        ..add('or')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(GAbaFiltersInput),
-            ]),
-          ),
-        );
-    }
-    value = object.not;
-    if (value != null) {
-      result
-        ..add('not')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GAbaFiltersInput),
-          ),
-        );
-    }
-    return result;
-  }
-
-  @override
-  GAbaFiltersInput deserialize(
-    Serializers serializers,
-    Iterable<Object?> serialized, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    final result = GAbaFiltersInputBuilder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current! as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case 'documentId':
-          result.documentId.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GIDFilterInput),
-                )!
-                as GIDFilterInput,
-          );
-          break;
-        case 'tab_name':
-          result.tab_name.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GStringFilterInput),
-                )!
-                as GStringFilterInput,
-          );
-          break;
-        case 'type':
-          result.type.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GStringFilterInput),
-                )!
-                as GStringFilterInput,
-          );
-          break;
-        case 'produtos':
-          result.produtos.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GProdutoFiltersInput),
-                )!
-                as GProdutoFiltersInput,
-          );
-          break;
-        case 'createdAt':
-          result.createdAt.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GDateTimeFilterInput),
-                )!
-                as GDateTimeFilterInput,
-          );
-          break;
-        case 'updatedAt':
-          result.updatedAt.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GDateTimeFilterInput),
-                )!
-                as GDateTimeFilterInput,
-          );
-          break;
-        case 'publishedAt':
-          result.publishedAt.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GDateTimeFilterInput),
-                )!
-                as GDateTimeFilterInput,
-          );
-          break;
-        case 'and':
-          result.and.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(BuiltList, const [
-                    const FullType.nullable(GAbaFiltersInput),
-                  ]),
-                )!
-                as BuiltList<Object?>,
-          );
-          break;
-        case 'or':
-          result.or.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(BuiltList, const [
-                    const FullType.nullable(GAbaFiltersInput),
-                  ]),
-                )!
-                as BuiltList<Object?>,
-          );
-          break;
-        case 'not':
-          result.not.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GAbaFiltersInput),
-                )!
-                as GAbaFiltersInput,
-          );
-          break;
-      }
-    }
-
-    return result.build();
-  }
-}
-
-class _$GAbaInputSerializer implements StructuredSerializer<GAbaInput> {
-  @override
-  final Iterable<Type> types = const [GAbaInput, _$GAbaInput];
-  @override
-  final String wireName = 'GAbaInput';
-
-  @override
-  Iterable<Object?> serialize(
-    Serializers serializers,
-    GAbaInput object, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    final result = <Object?>[];
-    Object? value;
-    value = object.tab_name;
-    if (value != null) {
-      result
-        ..add('tab_name')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
-    }
-    value = object.type;
-    if (value != null) {
-      result
-        ..add('type')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GENUM_ABA_TYPE),
-          ),
-        );
-    }
-    value = object.produtos;
-    if (value != null) {
-      result
-        ..add('produtos')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(String),
-            ]),
-          ),
-        );
-    }
-    value = object.publishedAt;
-    if (value != null) {
-      result
-        ..add('publishedAt')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GDateTime),
-          ),
-        );
-    }
-    return result;
-  }
-
-  @override
-  GAbaInput deserialize(
-    Serializers serializers,
-    Iterable<Object?> serialized, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    final result = GAbaInputBuilder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current! as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case 'tab_name':
-          result.tab_name =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
-          break;
-        case 'type':
-          result.type =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(GENUM_ABA_TYPE),
-                  )
-                  as GENUM_ABA_TYPE?;
-          break;
-        case 'produtos':
-          result.produtos.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(BuiltList, const [
-                    const FullType.nullable(String),
-                  ]),
-                )!
-                as BuiltList<Object?>,
-          );
-          break;
-        case 'publishedAt':
-          result.publishedAt.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GDateTime),
-                )!
-                as GDateTime,
-          );
-          break;
-      }
-    }
-
-    return result.build();
-  }
-}
-
-class _$GProdutoFiltersInputSerializer
-    implements StructuredSerializer<GProdutoFiltersInput> {
-  @override
-  final Iterable<Type> types = const [
-    GProdutoFiltersInput,
-    _$GProdutoFiltersInput,
-  ];
-  @override
-  final String wireName = 'GProdutoFiltersInput';
-
-  @override
-  Iterable<Object?> serialize(
-    Serializers serializers,
-    GProdutoFiltersInput object, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    final result = <Object?>[];
-    Object? value;
-    value = object.documentId;
-    if (value != null) {
-      result
-        ..add('documentId')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GIDFilterInput),
-          ),
-        );
-    }
-    value = object.name;
-    if (value != null) {
-      result
-        ..add('name')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GStringFilterInput),
-          ),
-        );
-    }
-    value = object.description;
-    if (value != null) {
-      result
-        ..add('description')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GStringFilterInput),
-          ),
-        );
-    }
-    value = object.price;
-    if (value != null) {
-      result
-        ..add('price')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GFloatFilterInput),
-          ),
-        );
-    }
-    value = object.descounted_price;
-    if (value != null) {
-      result
-        ..add('descounted_price')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GFloatFilterInput),
-          ),
-        );
-    }
-    value = object.is_optional;
-    if (value != null) {
-      result
-        ..add('is_optional')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GBooleanFilterInput),
-          ),
-        );
-    }
-    value = object.is_multiselect;
-    if (value != null) {
-      result
-        ..add('is_multiselect')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GBooleanFilterInput),
-          ),
-        );
-    }
-    value = object.abas;
-    if (value != null) {
-      result
-        ..add('abas')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GAbaFiltersInput),
-          ),
-        );
-    }
-    value = object.createdAt;
-    if (value != null) {
-      result
-        ..add('createdAt')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GDateTimeFilterInput),
-          ),
-        );
-    }
-    value = object.updatedAt;
-    if (value != null) {
-      result
-        ..add('updatedAt')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GDateTimeFilterInput),
-          ),
-        );
-    }
-    value = object.publishedAt;
-    if (value != null) {
-      result
-        ..add('publishedAt')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GDateTimeFilterInput),
-          ),
-        );
-    }
-    value = object.and;
-    if (value != null) {
-      result
-        ..add('and')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(GProdutoFiltersInput),
-            ]),
-          ),
-        );
-    }
-    value = object.or;
-    if (value != null) {
-      result
-        ..add('or')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(GProdutoFiltersInput),
-            ]),
-          ),
-        );
-    }
-    value = object.not;
-    if (value != null) {
-      result
-        ..add('not')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GProdutoFiltersInput),
-          ),
-        );
-    }
-    return result;
-  }
-
-  @override
-  GProdutoFiltersInput deserialize(
-    Serializers serializers,
-    Iterable<Object?> serialized, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    final result = GProdutoFiltersInputBuilder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current! as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case 'documentId':
-          result.documentId.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GIDFilterInput),
-                )!
-                as GIDFilterInput,
-          );
-          break;
-        case 'name':
-          result.name.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GStringFilterInput),
-                )!
-                as GStringFilterInput,
-          );
-          break;
-        case 'description':
-          result.description.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GStringFilterInput),
-                )!
-                as GStringFilterInput,
-          );
-          break;
-        case 'price':
-          result.price.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GFloatFilterInput),
-                )!
-                as GFloatFilterInput,
-          );
-          break;
-        case 'descounted_price':
-          result.descounted_price.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GFloatFilterInput),
-                )!
-                as GFloatFilterInput,
-          );
-          break;
-        case 'is_optional':
-          result.is_optional.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GBooleanFilterInput),
-                )!
-                as GBooleanFilterInput,
-          );
-          break;
-        case 'is_multiselect':
-          result.is_multiselect.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GBooleanFilterInput),
-                )!
-                as GBooleanFilterInput,
-          );
-          break;
-        case 'abas':
-          result.abas.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GAbaFiltersInput),
-                )!
-                as GAbaFiltersInput,
-          );
-          break;
-        case 'createdAt':
-          result.createdAt.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GDateTimeFilterInput),
-                )!
-                as GDateTimeFilterInput,
-          );
-          break;
-        case 'updatedAt':
-          result.updatedAt.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GDateTimeFilterInput),
-                )!
-                as GDateTimeFilterInput,
-          );
-          break;
-        case 'publishedAt':
-          result.publishedAt.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GDateTimeFilterInput),
-                )!
-                as GDateTimeFilterInput,
-          );
-          break;
-        case 'and':
-          result.and.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(BuiltList, const [
-                    const FullType.nullable(GProdutoFiltersInput),
-                  ]),
-                )!
-                as BuiltList<Object?>,
-          );
-          break;
-        case 'or':
-          result.or.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(BuiltList, const [
-                    const FullType.nullable(GProdutoFiltersInput),
-                  ]),
-                )!
-                as BuiltList<Object?>,
-          );
-          break;
-        case 'not':
-          result.not.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GProdutoFiltersInput),
-                )!
-                as GProdutoFiltersInput,
-          );
-          break;
-      }
-    }
-
-    return result.build();
-  }
-}
-
-class _$GProdutoInputSerializer implements StructuredSerializer<GProdutoInput> {
-  @override
-  final Iterable<Type> types = const [GProdutoInput, _$GProdutoInput];
-  @override
-  final String wireName = 'GProdutoInput';
-
-  @override
-  Iterable<Object?> serialize(
-    Serializers serializers,
-    GProdutoInput object, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    final result = <Object?>[];
-    Object? value;
-    value = object.name;
-    if (value != null) {
-      result
-        ..add('name')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
-    }
-    value = object.description;
-    if (value != null) {
-      result
-        ..add('description')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
-    }
-    value = object.price;
-    if (value != null) {
-      result
-        ..add('price')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(double)),
-        );
-    }
-    value = object.descounted_price;
-    if (value != null) {
-      result
-        ..add('descounted_price')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(double)),
-        );
-    }
-    value = object.images;
-    if (value != null) {
-      result
-        ..add('images')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(String),
-            ]),
-          ),
-        );
-    }
-    value = object.is_optional;
-    if (value != null) {
-      result
-        ..add('is_optional')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(bool)),
-        );
-    }
-    value = object.is_multiselect;
-    if (value != null) {
-      result
-        ..add('is_multiselect')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(bool)),
-        );
-    }
-    value = object.abas;
-    if (value != null) {
-      result
-        ..add('abas')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(String),
-            ]),
-          ),
-        );
-    }
-    value = object.publishedAt;
-    if (value != null) {
-      result
-        ..add('publishedAt')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GDateTime),
-          ),
-        );
-    }
-    return result;
-  }
-
-  @override
-  GProdutoInput deserialize(
-    Serializers serializers,
-    Iterable<Object?> serialized, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    final result = GProdutoInputBuilder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current! as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case 'name':
-          result.name =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
-          break;
-        case 'description':
-          result.description =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
-          break;
-        case 'price':
-          result.price =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(double),
-                  )
-                  as double?;
-          break;
-        case 'descounted_price':
-          result.descounted_price =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(double),
-                  )
-                  as double?;
-          break;
-        case 'images':
-          result.images.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(BuiltList, const [
-                    const FullType.nullable(String),
-                  ]),
-                )!
-                as BuiltList<Object?>,
-          );
-          break;
-        case 'is_optional':
-          result.is_optional =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(bool),
-                  )
-                  as bool?;
-          break;
-        case 'is_multiselect':
-          result.is_multiselect =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(bool),
-                  )
-                  as bool?;
-          break;
-        case 'abas':
-          result.abas.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(BuiltList, const [
-                    const FullType.nullable(String),
-                  ]),
-                )!
-                as BuiltList<Object?>,
-          );
-          break;
-        case 'publishedAt':
-          result.publishedAt.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GDateTime),
-                )!
-                as GDateTime,
-          );
-          break;
-      }
-    }
-
-    return result.build();
-  }
-}
-
-class _$GSettingInputSerializer implements StructuredSerializer<GSettingInput> {
-  @override
-  final Iterable<Type> types = const [GSettingInput, _$GSettingInput];
-  @override
-  final String wireName = 'GSettingInput';
-
-  @override
-  Iterable<Object?> serialize(
-    Serializers serializers,
-    GSettingInput object, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    final result = <Object?>[];
-    Object? value;
-    value = object.banner;
-    if (value != null) {
-      result
-        ..add('banner')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
-    }
-    value = object.name;
-    if (value != null) {
-      result
-        ..add('name')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
-    }
-    value = object.logo;
-    if (value != null) {
-      result
-        ..add('logo')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
-    }
-    value = object.color;
-    if (value != null) {
-      result
-        ..add('color')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
-    }
-    value = object.address;
-    if (value != null) {
-      result
-        ..add('address')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
-    }
-    value = object.phone_number;
-    if (value != null) {
-      result
-        ..add('phone_number')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
-    }
-    value = object.email;
-    if (value != null) {
-      result
-        ..add('email')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(String)),
-        );
-    }
-    value = object.open_at;
-    if (value != null) {
-      result
-        ..add('open_at')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(GTime)),
-        );
-    }
-    value = object.close_at;
-    if (value != null) {
-      result
-        ..add('close_at')
-        ..add(
-          serializers.serialize(value, specifiedType: const FullType(GTime)),
-        );
-    }
-    value = object.publishedAt;
-    if (value != null) {
-      result
-        ..add('publishedAt')
-        ..add(
-          serializers.serialize(
-            value,
-            specifiedType: const FullType(GDateTime),
-          ),
-        );
-    }
-    return result;
-  }
-
-  @override
-  GSettingInput deserialize(
-    Serializers serializers,
-    Iterable<Object?> serialized, {
-    FullType specifiedType = FullType.unspecified,
-  }) {
-    final result = GSettingInputBuilder();
-
-    final iterator = serialized.iterator;
-    while (iterator.moveNext()) {
-      final key = iterator.current! as String;
-      iterator.moveNext();
-      final Object? value = iterator.current;
-      switch (key) {
-        case 'banner':
-          result.banner =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
-          break;
-        case 'name':
-          result.name =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
-          break;
-        case 'logo':
-          result.logo =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
-          break;
-        case 'color':
-          result.color =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
-          break;
-        case 'address':
-          result.address =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
-          break;
-        case 'phone_number':
-          result.phone_number =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
-          break;
-        case 'email':
-          result.email =
-              serializers.deserialize(
-                    value,
-                    specifiedType: const FullType(String),
-                  )
-                  as String?;
-          break;
-        case 'open_at':
-          result.open_at.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GTime),
-                )!
-                as GTime,
-          );
-          break;
-        case 'close_at':
-          result.close_at.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GTime),
-                )!
-                as GTime,
-          );
-          break;
-        case 'publishedAt':
-          result.publishedAt.replace(
-            serializers.deserialize(
-                  value,
-                  specifiedType: const FullType(GDateTime),
-                )!
-                as GDateTime,
-          );
-          break;
-      }
-    }
-
-    return result.build();
-  }
-}
-
 class _$GUploadFileFiltersInputSerializer
     implements StructuredSerializer<GUploadFileFiltersInput> {
   @override
@@ -7060,6 +5845,1247 @@ class _$GUsersPermissionsUserInputSerializer
   }
 }
 
+class _$GAbaFiltersInputSerializer
+    implements StructuredSerializer<GAbaFiltersInput> {
+  @override
+  final Iterable<Type> types = const [GAbaFiltersInput, _$GAbaFiltersInput];
+  @override
+  final String wireName = 'GAbaFiltersInput';
+
+  @override
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GAbaFiltersInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = <Object?>[];
+    Object? value;
+    value = object.documentId;
+    if (value != null) {
+      result
+        ..add('documentId')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GIDFilterInput),
+          ),
+        );
+    }
+    value = object.tab_name;
+    if (value != null) {
+      result
+        ..add('tab_name')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringFilterInput),
+          ),
+        );
+    }
+    value = object.produtos;
+    if (value != null) {
+      result
+        ..add('produtos')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GProdutoFiltersInput),
+          ),
+        );
+    }
+    value = object.order;
+    if (value != null) {
+      result
+        ..add('order')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GIntFilterInput),
+          ),
+        );
+    }
+    value = object.createdAt;
+    if (value != null) {
+      result
+        ..add('createdAt')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GDateTimeFilterInput),
+          ),
+        );
+    }
+    value = object.updatedAt;
+    if (value != null) {
+      result
+        ..add('updatedAt')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GDateTimeFilterInput),
+          ),
+        );
+    }
+    value = object.publishedAt;
+    if (value != null) {
+      result
+        ..add('publishedAt')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GDateTimeFilterInput),
+          ),
+        );
+    }
+    value = object.and;
+    if (value != null) {
+      result
+        ..add('and')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(GAbaFiltersInput),
+            ]),
+          ),
+        );
+    }
+    value = object.or;
+    if (value != null) {
+      result
+        ..add('or')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(GAbaFiltersInput),
+            ]),
+          ),
+        );
+    }
+    value = object.not;
+    if (value != null) {
+      result
+        ..add('not')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GAbaFiltersInput),
+          ),
+        );
+    }
+    return result;
+  }
+
+  @override
+  GAbaFiltersInput deserialize(
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = GAbaFiltersInputBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case 'documentId':
+          result.documentId.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GIDFilterInput),
+                )!
+                as GIDFilterInput,
+          );
+          break;
+        case 'tab_name':
+          result.tab_name.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringFilterInput),
+                )!
+                as GStringFilterInput,
+          );
+          break;
+        case 'produtos':
+          result.produtos.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GProdutoFiltersInput),
+                )!
+                as GProdutoFiltersInput,
+          );
+          break;
+        case 'order':
+          result.order.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GIntFilterInput),
+                )!
+                as GIntFilterInput,
+          );
+          break;
+        case 'createdAt':
+          result.createdAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GDateTimeFilterInput),
+                )!
+                as GDateTimeFilterInput,
+          );
+          break;
+        case 'updatedAt':
+          result.updatedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GDateTimeFilterInput),
+                )!
+                as GDateTimeFilterInput,
+          );
+          break;
+        case 'publishedAt':
+          result.publishedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GDateTimeFilterInput),
+                )!
+                as GDateTimeFilterInput,
+          );
+          break;
+        case 'and':
+          result.and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(GAbaFiltersInput),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
+          break;
+        case 'or':
+          result.or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(GAbaFiltersInput),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
+          break;
+        case 'not':
+          result.not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GAbaFiltersInput),
+                )!
+                as GAbaFiltersInput,
+          );
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GAbaInputSerializer implements StructuredSerializer<GAbaInput> {
+  @override
+  final Iterable<Type> types = const [GAbaInput, _$GAbaInput];
+  @override
+  final String wireName = 'GAbaInput';
+
+  @override
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GAbaInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = <Object?>[];
+    Object? value;
+    value = object.tab_name;
+    if (value != null) {
+      result
+        ..add('tab_name')
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
+    }
+    value = object.produtos;
+    if (value != null) {
+      result
+        ..add('produtos')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(String),
+            ]),
+          ),
+        );
+    }
+    value = object.order;
+    if (value != null) {
+      result
+        ..add('order')
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
+    }
+    value = object.publishedAt;
+    if (value != null) {
+      result
+        ..add('publishedAt')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GDateTime),
+          ),
+        );
+    }
+    return result;
+  }
+
+  @override
+  GAbaInput deserialize(
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = GAbaInputBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case 'tab_name':
+          result.tab_name =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
+          break;
+        case 'produtos':
+          result.produtos.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(String),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
+          break;
+        case 'order':
+          result.order =
+              serializers.deserialize(value, specifiedType: const FullType(int))
+                  as int?;
+          break;
+        case 'publishedAt':
+          result.publishedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GDateTime),
+                )!
+                as GDateTime,
+          );
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GExtraFiltersInputSerializer
+    implements StructuredSerializer<GExtraFiltersInput> {
+  @override
+  final Iterable<Type> types = const [GExtraFiltersInput, _$GExtraFiltersInput];
+  @override
+  final String wireName = 'GExtraFiltersInput';
+
+  @override
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GExtraFiltersInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = <Object?>[];
+    Object? value;
+    value = object.documentId;
+    if (value != null) {
+      result
+        ..add('documentId')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GIDFilterInput),
+          ),
+        );
+    }
+    value = object.name;
+    if (value != null) {
+      result
+        ..add('name')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringFilterInput),
+          ),
+        );
+    }
+    value = object.price;
+    if (value != null) {
+      result
+        ..add('price')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GFloatFilterInput),
+          ),
+        );
+    }
+    value = object.isAvailable;
+    if (value != null) {
+      result
+        ..add('isAvailable')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GBooleanFilterInput),
+          ),
+        );
+    }
+    value = object.createdAt;
+    if (value != null) {
+      result
+        ..add('createdAt')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GDateTimeFilterInput),
+          ),
+        );
+    }
+    value = object.updatedAt;
+    if (value != null) {
+      result
+        ..add('updatedAt')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GDateTimeFilterInput),
+          ),
+        );
+    }
+    value = object.publishedAt;
+    if (value != null) {
+      result
+        ..add('publishedAt')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GDateTimeFilterInput),
+          ),
+        );
+    }
+    value = object.and;
+    if (value != null) {
+      result
+        ..add('and')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(GExtraFiltersInput),
+            ]),
+          ),
+        );
+    }
+    value = object.or;
+    if (value != null) {
+      result
+        ..add('or')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(GExtraFiltersInput),
+            ]),
+          ),
+        );
+    }
+    value = object.not;
+    if (value != null) {
+      result
+        ..add('not')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GExtraFiltersInput),
+          ),
+        );
+    }
+    return result;
+  }
+
+  @override
+  GExtraFiltersInput deserialize(
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = GExtraFiltersInputBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case 'documentId':
+          result.documentId.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GIDFilterInput),
+                )!
+                as GIDFilterInput,
+          );
+          break;
+        case 'name':
+          result.name.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringFilterInput),
+                )!
+                as GStringFilterInput,
+          );
+          break;
+        case 'price':
+          result.price.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GFloatFilterInput),
+                )!
+                as GFloatFilterInput,
+          );
+          break;
+        case 'isAvailable':
+          result.isAvailable.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GBooleanFilterInput),
+                )!
+                as GBooleanFilterInput,
+          );
+          break;
+        case 'createdAt':
+          result.createdAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GDateTimeFilterInput),
+                )!
+                as GDateTimeFilterInput,
+          );
+          break;
+        case 'updatedAt':
+          result.updatedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GDateTimeFilterInput),
+                )!
+                as GDateTimeFilterInput,
+          );
+          break;
+        case 'publishedAt':
+          result.publishedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GDateTimeFilterInput),
+                )!
+                as GDateTimeFilterInput,
+          );
+          break;
+        case 'and':
+          result.and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(GExtraFiltersInput),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
+          break;
+        case 'or':
+          result.or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(GExtraFiltersInput),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
+          break;
+        case 'not':
+          result.not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GExtraFiltersInput),
+                )!
+                as GExtraFiltersInput,
+          );
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GExtraInputSerializer implements StructuredSerializer<GExtraInput> {
+  @override
+  final Iterable<Type> types = const [GExtraInput, _$GExtraInput];
+  @override
+  final String wireName = 'GExtraInput';
+
+  @override
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GExtraInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = <Object?>[];
+    Object? value;
+    value = object.name;
+    if (value != null) {
+      result
+        ..add('name')
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
+    }
+    value = object.price;
+    if (value != null) {
+      result
+        ..add('price')
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(double)),
+        );
+    }
+    value = object.isAvailable;
+    if (value != null) {
+      result
+        ..add('isAvailable')
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(bool)),
+        );
+    }
+    value = object.publishedAt;
+    if (value != null) {
+      result
+        ..add('publishedAt')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GDateTime),
+          ),
+        );
+    }
+    return result;
+  }
+
+  @override
+  GExtraInput deserialize(
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = GExtraInputBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case 'name':
+          result.name =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
+          break;
+        case 'price':
+          result.price =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(double),
+                  )
+                  as double?;
+          break;
+        case 'isAvailable':
+          result.isAvailable =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(bool),
+                  )
+                  as bool?;
+          break;
+        case 'publishedAt':
+          result.publishedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GDateTime),
+                )!
+                as GDateTime,
+          );
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProdutoFiltersInputSerializer
+    implements StructuredSerializer<GProdutoFiltersInput> {
+  @override
+  final Iterable<Type> types = const [
+    GProdutoFiltersInput,
+    _$GProdutoFiltersInput,
+  ];
+  @override
+  final String wireName = 'GProdutoFiltersInput';
+
+  @override
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GProdutoFiltersInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = <Object?>[];
+    Object? value;
+    value = object.documentId;
+    if (value != null) {
+      result
+        ..add('documentId')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GIDFilterInput),
+          ),
+        );
+    }
+    value = object.name;
+    if (value != null) {
+      result
+        ..add('name')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringFilterInput),
+          ),
+        );
+    }
+    value = object.description;
+    if (value != null) {
+      result
+        ..add('description')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GStringFilterInput),
+          ),
+        );
+    }
+    value = object.price;
+    if (value != null) {
+      result
+        ..add('price')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GFloatFilterInput),
+          ),
+        );
+    }
+    value = object.descounted_price;
+    if (value != null) {
+      result
+        ..add('descounted_price')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GFloatFilterInput),
+          ),
+        );
+    }
+    value = object.is_optional;
+    if (value != null) {
+      result
+        ..add('is_optional')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GBooleanFilterInput),
+          ),
+        );
+    }
+    value = object.is_multiselect;
+    if (value != null) {
+      result
+        ..add('is_multiselect')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GBooleanFilterInput),
+          ),
+        );
+    }
+    value = object.abas;
+    if (value != null) {
+      result
+        ..add('abas')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GAbaFiltersInput),
+          ),
+        );
+    }
+    value = object.createdAt;
+    if (value != null) {
+      result
+        ..add('createdAt')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GDateTimeFilterInput),
+          ),
+        );
+    }
+    value = object.updatedAt;
+    if (value != null) {
+      result
+        ..add('updatedAt')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GDateTimeFilterInput),
+          ),
+        );
+    }
+    value = object.publishedAt;
+    if (value != null) {
+      result
+        ..add('publishedAt')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GDateTimeFilterInput),
+          ),
+        );
+    }
+    value = object.and;
+    if (value != null) {
+      result
+        ..add('and')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(GProdutoFiltersInput),
+            ]),
+          ),
+        );
+    }
+    value = object.or;
+    if (value != null) {
+      result
+        ..add('or')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(GProdutoFiltersInput),
+            ]),
+          ),
+        );
+    }
+    value = object.not;
+    if (value != null) {
+      result
+        ..add('not')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GProdutoFiltersInput),
+          ),
+        );
+    }
+    return result;
+  }
+
+  @override
+  GProdutoFiltersInput deserialize(
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = GProdutoFiltersInputBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case 'documentId':
+          result.documentId.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GIDFilterInput),
+                )!
+                as GIDFilterInput,
+          );
+          break;
+        case 'name':
+          result.name.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringFilterInput),
+                )!
+                as GStringFilterInput,
+          );
+          break;
+        case 'description':
+          result.description.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GStringFilterInput),
+                )!
+                as GStringFilterInput,
+          );
+          break;
+        case 'price':
+          result.price.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GFloatFilterInput),
+                )!
+                as GFloatFilterInput,
+          );
+          break;
+        case 'descounted_price':
+          result.descounted_price.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GFloatFilterInput),
+                )!
+                as GFloatFilterInput,
+          );
+          break;
+        case 'is_optional':
+          result.is_optional.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GBooleanFilterInput),
+                )!
+                as GBooleanFilterInput,
+          );
+          break;
+        case 'is_multiselect':
+          result.is_multiselect.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GBooleanFilterInput),
+                )!
+                as GBooleanFilterInput,
+          );
+          break;
+        case 'abas':
+          result.abas.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GAbaFiltersInput),
+                )!
+                as GAbaFiltersInput,
+          );
+          break;
+        case 'createdAt':
+          result.createdAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GDateTimeFilterInput),
+                )!
+                as GDateTimeFilterInput,
+          );
+          break;
+        case 'updatedAt':
+          result.updatedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GDateTimeFilterInput),
+                )!
+                as GDateTimeFilterInput,
+          );
+          break;
+        case 'publishedAt':
+          result.publishedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GDateTimeFilterInput),
+                )!
+                as GDateTimeFilterInput,
+          );
+          break;
+        case 'and':
+          result.and.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(GProdutoFiltersInput),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
+          break;
+        case 'or':
+          result.or.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(GProdutoFiltersInput),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
+          break;
+        case 'not':
+          result.not.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GProdutoFiltersInput),
+                )!
+                as GProdutoFiltersInput,
+          );
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
+class _$GProdutoInputSerializer implements StructuredSerializer<GProdutoInput> {
+  @override
+  final Iterable<Type> types = const [GProdutoInput, _$GProdutoInput];
+  @override
+  final String wireName = 'GProdutoInput';
+
+  @override
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GProdutoInput object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = <Object?>[];
+    Object? value;
+    value = object.name;
+    if (value != null) {
+      result
+        ..add('name')
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
+    }
+    value = object.description;
+    if (value != null) {
+      result
+        ..add('description')
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
+    }
+    value = object.price;
+    if (value != null) {
+      result
+        ..add('price')
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(double)),
+        );
+    }
+    value = object.descounted_price;
+    if (value != null) {
+      result
+        ..add('descounted_price')
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(double)),
+        );
+    }
+    value = object.images;
+    if (value != null) {
+      result
+        ..add('images')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(String),
+            ]),
+          ),
+        );
+    }
+    value = object.is_optional;
+    if (value != null) {
+      result
+        ..add('is_optional')
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(bool)),
+        );
+    }
+    value = object.is_multiselect;
+    if (value != null) {
+      result
+        ..add('is_multiselect')
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(bool)),
+        );
+    }
+    value = object.abas;
+    if (value != null) {
+      result
+        ..add('abas')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(String),
+            ]),
+          ),
+        );
+    }
+    value = object.publishedAt;
+    if (value != null) {
+      result
+        ..add('publishedAt')
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(GDateTime),
+          ),
+        );
+    }
+    return result;
+  }
+
+  @override
+  GProdutoInput deserialize(
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
+    final result = GProdutoInputBuilder();
+
+    final iterator = serialized.iterator;
+    while (iterator.moveNext()) {
+      final key = iterator.current! as String;
+      iterator.moveNext();
+      final Object? value = iterator.current;
+      switch (key) {
+        case 'name':
+          result.name =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
+          break;
+        case 'description':
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
+          break;
+        case 'price':
+          result.price =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(double),
+                  )
+                  as double?;
+          break;
+        case 'descounted_price':
+          result.descounted_price =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(double),
+                  )
+                  as double?;
+          break;
+        case 'images':
+          result.images.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(String),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
+          break;
+        case 'is_optional':
+          result.is_optional =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(bool),
+                  )
+                  as bool?;
+          break;
+        case 'is_multiselect':
+          result.is_multiselect =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(bool),
+                  )
+                  as bool?;
+          break;
+        case 'abas':
+          result.abas.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(String),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
+          break;
+        case 'publishedAt':
+          result.publishedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GDateTime),
+                )!
+                as GDateTime,
+          );
+          break;
+      }
+    }
+
+    return result.build();
+  }
+}
+
 class _$GFileInfoInputSerializer
     implements StructuredSerializer<GFileInfoInput> {
   @override
@@ -7552,89 +7578,6 @@ class GDateTimeBuilder implements Builder<GDateTime, GDateTimeBuilder> {
           value: BuiltValueNullFieldError.checkNotNull(
             value,
             r'GDateTime',
-            'value',
-          ),
-        );
-    replace(_$result);
-    return _$result;
-  }
-}
-
-class _$GTime extends GTime {
-  @override
-  final String value;
-
-  factory _$GTime([void Function(GTimeBuilder)? updates]) =>
-      (GTimeBuilder()..update(updates))._build();
-
-  _$GTime._({required this.value}) : super._();
-  @override
-  GTime rebuild(void Function(GTimeBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
-
-  @override
-  GTimeBuilder toBuilder() => GTimeBuilder()..replace(this);
-
-  @override
-  bool operator ==(Object other) {
-    if (identical(other, this)) return true;
-    return other is GTime && value == other.value;
-  }
-
-  @override
-  int get hashCode {
-    var _$hash = 0;
-    _$hash = $jc(_$hash, value.hashCode);
-    _$hash = $jf(_$hash);
-    return _$hash;
-  }
-
-  @override
-  String toString() {
-    return (newBuiltValueToStringHelper(
-      r'GTime',
-    )..add('value', value)).toString();
-  }
-}
-
-class GTimeBuilder implements Builder<GTime, GTimeBuilder> {
-  _$GTime? _$v;
-
-  String? _value;
-  String? get value => _$this._value;
-  set value(String? value) => _$this._value = value;
-
-  GTimeBuilder();
-
-  GTimeBuilder get _$this {
-    final $v = _$v;
-    if ($v != null) {
-      _value = $v.value;
-      _$v = null;
-    }
-    return this;
-  }
-
-  @override
-  void replace(GTime other) {
-    _$v = other as _$GTime;
-  }
-
-  @override
-  void update(void Function(GTimeBuilder)? updates) {
-    if (updates != null) updates(this);
-  }
-
-  @override
-  GTime build() => _build();
-
-  _$GTime _build() {
-    final _$result =
-        _$v ??
-        _$GTime._(
-          value: BuiltValueNullFieldError.checkNotNull(
-            value,
-            r'GTime',
             'value',
           ),
         );
@@ -10251,1106 +10194,6 @@ class GJSONFilterInputBuilder
       } catch (e) {
         throw BuiltValueNestedFieldError(
           r'GJSONFilterInput',
-          _$failedField,
-          e.toString(),
-        );
-      }
-      rethrow;
-    }
-    replace(_$result);
-    return _$result;
-  }
-}
-
-class _$GAbaFiltersInput extends GAbaFiltersInput {
-  @override
-  final GIDFilterInput? documentId;
-  @override
-  final GStringFilterInput? tab_name;
-  @override
-  final GStringFilterInput? type;
-  @override
-  final GProdutoFiltersInput? produtos;
-  @override
-  final GDateTimeFilterInput? createdAt;
-  @override
-  final GDateTimeFilterInput? updatedAt;
-  @override
-  final GDateTimeFilterInput? publishedAt;
-  @override
-  final BuiltList<GAbaFiltersInput?>? and;
-  @override
-  final BuiltList<GAbaFiltersInput?>? or;
-  @override
-  final GAbaFiltersInput? not;
-
-  factory _$GAbaFiltersInput([
-    void Function(GAbaFiltersInputBuilder)? updates,
-  ]) => (GAbaFiltersInputBuilder()..update(updates))._build();
-
-  _$GAbaFiltersInput._({
-    this.documentId,
-    this.tab_name,
-    this.type,
-    this.produtos,
-    this.createdAt,
-    this.updatedAt,
-    this.publishedAt,
-    this.and,
-    this.or,
-    this.not,
-  }) : super._();
-  @override
-  GAbaFiltersInput rebuild(void Function(GAbaFiltersInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
-
-  @override
-  GAbaFiltersInputBuilder toBuilder() =>
-      GAbaFiltersInputBuilder()..replace(this);
-
-  @override
-  bool operator ==(Object other) {
-    if (identical(other, this)) return true;
-    return other is GAbaFiltersInput &&
-        documentId == other.documentId &&
-        tab_name == other.tab_name &&
-        type == other.type &&
-        produtos == other.produtos &&
-        createdAt == other.createdAt &&
-        updatedAt == other.updatedAt &&
-        publishedAt == other.publishedAt &&
-        and == other.and &&
-        or == other.or &&
-        not == other.not;
-  }
-
-  @override
-  int get hashCode {
-    var _$hash = 0;
-    _$hash = $jc(_$hash, documentId.hashCode);
-    _$hash = $jc(_$hash, tab_name.hashCode);
-    _$hash = $jc(_$hash, type.hashCode);
-    _$hash = $jc(_$hash, produtos.hashCode);
-    _$hash = $jc(_$hash, createdAt.hashCode);
-    _$hash = $jc(_$hash, updatedAt.hashCode);
-    _$hash = $jc(_$hash, publishedAt.hashCode);
-    _$hash = $jc(_$hash, and.hashCode);
-    _$hash = $jc(_$hash, or.hashCode);
-    _$hash = $jc(_$hash, not.hashCode);
-    _$hash = $jf(_$hash);
-    return _$hash;
-  }
-
-  @override
-  String toString() {
-    return (newBuiltValueToStringHelper(r'GAbaFiltersInput')
-          ..add('documentId', documentId)
-          ..add('tab_name', tab_name)
-          ..add('type', type)
-          ..add('produtos', produtos)
-          ..add('createdAt', createdAt)
-          ..add('updatedAt', updatedAt)
-          ..add('publishedAt', publishedAt)
-          ..add('and', and)
-          ..add('or', or)
-          ..add('not', not))
-        .toString();
-  }
-}
-
-class GAbaFiltersInputBuilder
-    implements Builder<GAbaFiltersInput, GAbaFiltersInputBuilder> {
-  _$GAbaFiltersInput? _$v;
-
-  GIDFilterInputBuilder? _documentId;
-  GIDFilterInputBuilder get documentId =>
-      _$this._documentId ??= GIDFilterInputBuilder();
-  set documentId(GIDFilterInputBuilder? documentId) =>
-      _$this._documentId = documentId;
-
-  GStringFilterInputBuilder? _tab_name;
-  GStringFilterInputBuilder get tab_name =>
-      _$this._tab_name ??= GStringFilterInputBuilder();
-  set tab_name(GStringFilterInputBuilder? tab_name) =>
-      _$this._tab_name = tab_name;
-
-  GStringFilterInputBuilder? _type;
-  GStringFilterInputBuilder get type =>
-      _$this._type ??= GStringFilterInputBuilder();
-  set type(GStringFilterInputBuilder? type) => _$this._type = type;
-
-  GProdutoFiltersInputBuilder? _produtos;
-  GProdutoFiltersInputBuilder get produtos =>
-      _$this._produtos ??= GProdutoFiltersInputBuilder();
-  set produtos(GProdutoFiltersInputBuilder? produtos) =>
-      _$this._produtos = produtos;
-
-  GDateTimeFilterInputBuilder? _createdAt;
-  GDateTimeFilterInputBuilder get createdAt =>
-      _$this._createdAt ??= GDateTimeFilterInputBuilder();
-  set createdAt(GDateTimeFilterInputBuilder? createdAt) =>
-      _$this._createdAt = createdAt;
-
-  GDateTimeFilterInputBuilder? _updatedAt;
-  GDateTimeFilterInputBuilder get updatedAt =>
-      _$this._updatedAt ??= GDateTimeFilterInputBuilder();
-  set updatedAt(GDateTimeFilterInputBuilder? updatedAt) =>
-      _$this._updatedAt = updatedAt;
-
-  GDateTimeFilterInputBuilder? _publishedAt;
-  GDateTimeFilterInputBuilder get publishedAt =>
-      _$this._publishedAt ??= GDateTimeFilterInputBuilder();
-  set publishedAt(GDateTimeFilterInputBuilder? publishedAt) =>
-      _$this._publishedAt = publishedAt;
-
-  ListBuilder<GAbaFiltersInput?>? _and;
-  ListBuilder<GAbaFiltersInput?> get and =>
-      _$this._and ??= ListBuilder<GAbaFiltersInput?>();
-  set and(ListBuilder<GAbaFiltersInput?>? and) => _$this._and = and;
-
-  ListBuilder<GAbaFiltersInput?>? _or;
-  ListBuilder<GAbaFiltersInput?> get or =>
-      _$this._or ??= ListBuilder<GAbaFiltersInput?>();
-  set or(ListBuilder<GAbaFiltersInput?>? or) => _$this._or = or;
-
-  GAbaFiltersInputBuilder? _not;
-  GAbaFiltersInputBuilder get not => _$this._not ??= GAbaFiltersInputBuilder();
-  set not(GAbaFiltersInputBuilder? not) => _$this._not = not;
-
-  GAbaFiltersInputBuilder();
-
-  GAbaFiltersInputBuilder get _$this {
-    final $v = _$v;
-    if ($v != null) {
-      _documentId = $v.documentId?.toBuilder();
-      _tab_name = $v.tab_name?.toBuilder();
-      _type = $v.type?.toBuilder();
-      _produtos = $v.produtos?.toBuilder();
-      _createdAt = $v.createdAt?.toBuilder();
-      _updatedAt = $v.updatedAt?.toBuilder();
-      _publishedAt = $v.publishedAt?.toBuilder();
-      _and = $v.and?.toBuilder();
-      _or = $v.or?.toBuilder();
-      _not = $v.not?.toBuilder();
-      _$v = null;
-    }
-    return this;
-  }
-
-  @override
-  void replace(GAbaFiltersInput other) {
-    _$v = other as _$GAbaFiltersInput;
-  }
-
-  @override
-  void update(void Function(GAbaFiltersInputBuilder)? updates) {
-    if (updates != null) updates(this);
-  }
-
-  @override
-  GAbaFiltersInput build() => _build();
-
-  _$GAbaFiltersInput _build() {
-    _$GAbaFiltersInput _$result;
-    try {
-      _$result =
-          _$v ??
-          _$GAbaFiltersInput._(
-            documentId: _documentId?.build(),
-            tab_name: _tab_name?.build(),
-            type: _type?.build(),
-            produtos: _produtos?.build(),
-            createdAt: _createdAt?.build(),
-            updatedAt: _updatedAt?.build(),
-            publishedAt: _publishedAt?.build(),
-            and: _and?.build(),
-            or: _or?.build(),
-            not: _not?.build(),
-          );
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'documentId';
-        _documentId?.build();
-        _$failedField = 'tab_name';
-        _tab_name?.build();
-        _$failedField = 'type';
-        _type?.build();
-        _$failedField = 'produtos';
-        _produtos?.build();
-        _$failedField = 'createdAt';
-        _createdAt?.build();
-        _$failedField = 'updatedAt';
-        _updatedAt?.build();
-        _$failedField = 'publishedAt';
-        _publishedAt?.build();
-        _$failedField = 'and';
-        _and?.build();
-        _$failedField = 'or';
-        _or?.build();
-        _$failedField = 'not';
-        _not?.build();
-      } catch (e) {
-        throw BuiltValueNestedFieldError(
-          r'GAbaFiltersInput',
-          _$failedField,
-          e.toString(),
-        );
-      }
-      rethrow;
-    }
-    replace(_$result);
-    return _$result;
-  }
-}
-
-class _$GAbaInput extends GAbaInput {
-  @override
-  final String? tab_name;
-  @override
-  final GENUM_ABA_TYPE? type;
-  @override
-  final BuiltList<String?>? produtos;
-  @override
-  final GDateTime? publishedAt;
-
-  factory _$GAbaInput([void Function(GAbaInputBuilder)? updates]) =>
-      (GAbaInputBuilder()..update(updates))._build();
-
-  _$GAbaInput._({this.tab_name, this.type, this.produtos, this.publishedAt})
-    : super._();
-  @override
-  GAbaInput rebuild(void Function(GAbaInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
-
-  @override
-  GAbaInputBuilder toBuilder() => GAbaInputBuilder()..replace(this);
-
-  @override
-  bool operator ==(Object other) {
-    if (identical(other, this)) return true;
-    return other is GAbaInput &&
-        tab_name == other.tab_name &&
-        type == other.type &&
-        produtos == other.produtos &&
-        publishedAt == other.publishedAt;
-  }
-
-  @override
-  int get hashCode {
-    var _$hash = 0;
-    _$hash = $jc(_$hash, tab_name.hashCode);
-    _$hash = $jc(_$hash, type.hashCode);
-    _$hash = $jc(_$hash, produtos.hashCode);
-    _$hash = $jc(_$hash, publishedAt.hashCode);
-    _$hash = $jf(_$hash);
-    return _$hash;
-  }
-
-  @override
-  String toString() {
-    return (newBuiltValueToStringHelper(r'GAbaInput')
-          ..add('tab_name', tab_name)
-          ..add('type', type)
-          ..add('produtos', produtos)
-          ..add('publishedAt', publishedAt))
-        .toString();
-  }
-}
-
-class GAbaInputBuilder implements Builder<GAbaInput, GAbaInputBuilder> {
-  _$GAbaInput? _$v;
-
-  String? _tab_name;
-  String? get tab_name => _$this._tab_name;
-  set tab_name(String? tab_name) => _$this._tab_name = tab_name;
-
-  GENUM_ABA_TYPE? _type;
-  GENUM_ABA_TYPE? get type => _$this._type;
-  set type(GENUM_ABA_TYPE? type) => _$this._type = type;
-
-  ListBuilder<String?>? _produtos;
-  ListBuilder<String?> get produtos =>
-      _$this._produtos ??= ListBuilder<String?>();
-  set produtos(ListBuilder<String?>? produtos) => _$this._produtos = produtos;
-
-  GDateTimeBuilder? _publishedAt;
-  GDateTimeBuilder get publishedAt =>
-      _$this._publishedAt ??= GDateTimeBuilder();
-  set publishedAt(GDateTimeBuilder? publishedAt) =>
-      _$this._publishedAt = publishedAt;
-
-  GAbaInputBuilder();
-
-  GAbaInputBuilder get _$this {
-    final $v = _$v;
-    if ($v != null) {
-      _tab_name = $v.tab_name;
-      _type = $v.type;
-      _produtos = $v.produtos?.toBuilder();
-      _publishedAt = $v.publishedAt?.toBuilder();
-      _$v = null;
-    }
-    return this;
-  }
-
-  @override
-  void replace(GAbaInput other) {
-    _$v = other as _$GAbaInput;
-  }
-
-  @override
-  void update(void Function(GAbaInputBuilder)? updates) {
-    if (updates != null) updates(this);
-  }
-
-  @override
-  GAbaInput build() => _build();
-
-  _$GAbaInput _build() {
-    _$GAbaInput _$result;
-    try {
-      _$result =
-          _$v ??
-          _$GAbaInput._(
-            tab_name: tab_name,
-            type: type,
-            produtos: _produtos?.build(),
-            publishedAt: _publishedAt?.build(),
-          );
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'produtos';
-        _produtos?.build();
-        _$failedField = 'publishedAt';
-        _publishedAt?.build();
-      } catch (e) {
-        throw BuiltValueNestedFieldError(
-          r'GAbaInput',
-          _$failedField,
-          e.toString(),
-        );
-      }
-      rethrow;
-    }
-    replace(_$result);
-    return _$result;
-  }
-}
-
-class _$GProdutoFiltersInput extends GProdutoFiltersInput {
-  @override
-  final GIDFilterInput? documentId;
-  @override
-  final GStringFilterInput? name;
-  @override
-  final GStringFilterInput? description;
-  @override
-  final GFloatFilterInput? price;
-  @override
-  final GFloatFilterInput? descounted_price;
-  @override
-  final GBooleanFilterInput? is_optional;
-  @override
-  final GBooleanFilterInput? is_multiselect;
-  @override
-  final GAbaFiltersInput? abas;
-  @override
-  final GDateTimeFilterInput? createdAt;
-  @override
-  final GDateTimeFilterInput? updatedAt;
-  @override
-  final GDateTimeFilterInput? publishedAt;
-  @override
-  final BuiltList<GProdutoFiltersInput?>? and;
-  @override
-  final BuiltList<GProdutoFiltersInput?>? or;
-  @override
-  final GProdutoFiltersInput? not;
-
-  factory _$GProdutoFiltersInput([
-    void Function(GProdutoFiltersInputBuilder)? updates,
-  ]) => (GProdutoFiltersInputBuilder()..update(updates))._build();
-
-  _$GProdutoFiltersInput._({
-    this.documentId,
-    this.name,
-    this.description,
-    this.price,
-    this.descounted_price,
-    this.is_optional,
-    this.is_multiselect,
-    this.abas,
-    this.createdAt,
-    this.updatedAt,
-    this.publishedAt,
-    this.and,
-    this.or,
-    this.not,
-  }) : super._();
-  @override
-  GProdutoFiltersInput rebuild(
-    void Function(GProdutoFiltersInputBuilder) updates,
-  ) => (toBuilder()..update(updates)).build();
-
-  @override
-  GProdutoFiltersInputBuilder toBuilder() =>
-      GProdutoFiltersInputBuilder()..replace(this);
-
-  @override
-  bool operator ==(Object other) {
-    if (identical(other, this)) return true;
-    return other is GProdutoFiltersInput &&
-        documentId == other.documentId &&
-        name == other.name &&
-        description == other.description &&
-        price == other.price &&
-        descounted_price == other.descounted_price &&
-        is_optional == other.is_optional &&
-        is_multiselect == other.is_multiselect &&
-        abas == other.abas &&
-        createdAt == other.createdAt &&
-        updatedAt == other.updatedAt &&
-        publishedAt == other.publishedAt &&
-        and == other.and &&
-        or == other.or &&
-        not == other.not;
-  }
-
-  @override
-  int get hashCode {
-    var _$hash = 0;
-    _$hash = $jc(_$hash, documentId.hashCode);
-    _$hash = $jc(_$hash, name.hashCode);
-    _$hash = $jc(_$hash, description.hashCode);
-    _$hash = $jc(_$hash, price.hashCode);
-    _$hash = $jc(_$hash, descounted_price.hashCode);
-    _$hash = $jc(_$hash, is_optional.hashCode);
-    _$hash = $jc(_$hash, is_multiselect.hashCode);
-    _$hash = $jc(_$hash, abas.hashCode);
-    _$hash = $jc(_$hash, createdAt.hashCode);
-    _$hash = $jc(_$hash, updatedAt.hashCode);
-    _$hash = $jc(_$hash, publishedAt.hashCode);
-    _$hash = $jc(_$hash, and.hashCode);
-    _$hash = $jc(_$hash, or.hashCode);
-    _$hash = $jc(_$hash, not.hashCode);
-    _$hash = $jf(_$hash);
-    return _$hash;
-  }
-
-  @override
-  String toString() {
-    return (newBuiltValueToStringHelper(r'GProdutoFiltersInput')
-          ..add('documentId', documentId)
-          ..add('name', name)
-          ..add('description', description)
-          ..add('price', price)
-          ..add('descounted_price', descounted_price)
-          ..add('is_optional', is_optional)
-          ..add('is_multiselect', is_multiselect)
-          ..add('abas', abas)
-          ..add('createdAt', createdAt)
-          ..add('updatedAt', updatedAt)
-          ..add('publishedAt', publishedAt)
-          ..add('and', and)
-          ..add('or', or)
-          ..add('not', not))
-        .toString();
-  }
-}
-
-class GProdutoFiltersInputBuilder
-    implements Builder<GProdutoFiltersInput, GProdutoFiltersInputBuilder> {
-  _$GProdutoFiltersInput? _$v;
-
-  GIDFilterInputBuilder? _documentId;
-  GIDFilterInputBuilder get documentId =>
-      _$this._documentId ??= GIDFilterInputBuilder();
-  set documentId(GIDFilterInputBuilder? documentId) =>
-      _$this._documentId = documentId;
-
-  GStringFilterInputBuilder? _name;
-  GStringFilterInputBuilder get name =>
-      _$this._name ??= GStringFilterInputBuilder();
-  set name(GStringFilterInputBuilder? name) => _$this._name = name;
-
-  GStringFilterInputBuilder? _description;
-  GStringFilterInputBuilder get description =>
-      _$this._description ??= GStringFilterInputBuilder();
-  set description(GStringFilterInputBuilder? description) =>
-      _$this._description = description;
-
-  GFloatFilterInputBuilder? _price;
-  GFloatFilterInputBuilder get price =>
-      _$this._price ??= GFloatFilterInputBuilder();
-  set price(GFloatFilterInputBuilder? price) => _$this._price = price;
-
-  GFloatFilterInputBuilder? _descounted_price;
-  GFloatFilterInputBuilder get descounted_price =>
-      _$this._descounted_price ??= GFloatFilterInputBuilder();
-  set descounted_price(GFloatFilterInputBuilder? descounted_price) =>
-      _$this._descounted_price = descounted_price;
-
-  GBooleanFilterInputBuilder? _is_optional;
-  GBooleanFilterInputBuilder get is_optional =>
-      _$this._is_optional ??= GBooleanFilterInputBuilder();
-  set is_optional(GBooleanFilterInputBuilder? is_optional) =>
-      _$this._is_optional = is_optional;
-
-  GBooleanFilterInputBuilder? _is_multiselect;
-  GBooleanFilterInputBuilder get is_multiselect =>
-      _$this._is_multiselect ??= GBooleanFilterInputBuilder();
-  set is_multiselect(GBooleanFilterInputBuilder? is_multiselect) =>
-      _$this._is_multiselect = is_multiselect;
-
-  GAbaFiltersInputBuilder? _abas;
-  GAbaFiltersInputBuilder get abas =>
-      _$this._abas ??= GAbaFiltersInputBuilder();
-  set abas(GAbaFiltersInputBuilder? abas) => _$this._abas = abas;
-
-  GDateTimeFilterInputBuilder? _createdAt;
-  GDateTimeFilterInputBuilder get createdAt =>
-      _$this._createdAt ??= GDateTimeFilterInputBuilder();
-  set createdAt(GDateTimeFilterInputBuilder? createdAt) =>
-      _$this._createdAt = createdAt;
-
-  GDateTimeFilterInputBuilder? _updatedAt;
-  GDateTimeFilterInputBuilder get updatedAt =>
-      _$this._updatedAt ??= GDateTimeFilterInputBuilder();
-  set updatedAt(GDateTimeFilterInputBuilder? updatedAt) =>
-      _$this._updatedAt = updatedAt;
-
-  GDateTimeFilterInputBuilder? _publishedAt;
-  GDateTimeFilterInputBuilder get publishedAt =>
-      _$this._publishedAt ??= GDateTimeFilterInputBuilder();
-  set publishedAt(GDateTimeFilterInputBuilder? publishedAt) =>
-      _$this._publishedAt = publishedAt;
-
-  ListBuilder<GProdutoFiltersInput?>? _and;
-  ListBuilder<GProdutoFiltersInput?> get and =>
-      _$this._and ??= ListBuilder<GProdutoFiltersInput?>();
-  set and(ListBuilder<GProdutoFiltersInput?>? and) => _$this._and = and;
-
-  ListBuilder<GProdutoFiltersInput?>? _or;
-  ListBuilder<GProdutoFiltersInput?> get or =>
-      _$this._or ??= ListBuilder<GProdutoFiltersInput?>();
-  set or(ListBuilder<GProdutoFiltersInput?>? or) => _$this._or = or;
-
-  GProdutoFiltersInputBuilder? _not;
-  GProdutoFiltersInputBuilder get not =>
-      _$this._not ??= GProdutoFiltersInputBuilder();
-  set not(GProdutoFiltersInputBuilder? not) => _$this._not = not;
-
-  GProdutoFiltersInputBuilder();
-
-  GProdutoFiltersInputBuilder get _$this {
-    final $v = _$v;
-    if ($v != null) {
-      _documentId = $v.documentId?.toBuilder();
-      _name = $v.name?.toBuilder();
-      _description = $v.description?.toBuilder();
-      _price = $v.price?.toBuilder();
-      _descounted_price = $v.descounted_price?.toBuilder();
-      _is_optional = $v.is_optional?.toBuilder();
-      _is_multiselect = $v.is_multiselect?.toBuilder();
-      _abas = $v.abas?.toBuilder();
-      _createdAt = $v.createdAt?.toBuilder();
-      _updatedAt = $v.updatedAt?.toBuilder();
-      _publishedAt = $v.publishedAt?.toBuilder();
-      _and = $v.and?.toBuilder();
-      _or = $v.or?.toBuilder();
-      _not = $v.not?.toBuilder();
-      _$v = null;
-    }
-    return this;
-  }
-
-  @override
-  void replace(GProdutoFiltersInput other) {
-    _$v = other as _$GProdutoFiltersInput;
-  }
-
-  @override
-  void update(void Function(GProdutoFiltersInputBuilder)? updates) {
-    if (updates != null) updates(this);
-  }
-
-  @override
-  GProdutoFiltersInput build() => _build();
-
-  _$GProdutoFiltersInput _build() {
-    _$GProdutoFiltersInput _$result;
-    try {
-      _$result =
-          _$v ??
-          _$GProdutoFiltersInput._(
-            documentId: _documentId?.build(),
-            name: _name?.build(),
-            description: _description?.build(),
-            price: _price?.build(),
-            descounted_price: _descounted_price?.build(),
-            is_optional: _is_optional?.build(),
-            is_multiselect: _is_multiselect?.build(),
-            abas: _abas?.build(),
-            createdAt: _createdAt?.build(),
-            updatedAt: _updatedAt?.build(),
-            publishedAt: _publishedAt?.build(),
-            and: _and?.build(),
-            or: _or?.build(),
-            not: _not?.build(),
-          );
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'documentId';
-        _documentId?.build();
-        _$failedField = 'name';
-        _name?.build();
-        _$failedField = 'description';
-        _description?.build();
-        _$failedField = 'price';
-        _price?.build();
-        _$failedField = 'descounted_price';
-        _descounted_price?.build();
-        _$failedField = 'is_optional';
-        _is_optional?.build();
-        _$failedField = 'is_multiselect';
-        _is_multiselect?.build();
-        _$failedField = 'abas';
-        _abas?.build();
-        _$failedField = 'createdAt';
-        _createdAt?.build();
-        _$failedField = 'updatedAt';
-        _updatedAt?.build();
-        _$failedField = 'publishedAt';
-        _publishedAt?.build();
-        _$failedField = 'and';
-        _and?.build();
-        _$failedField = 'or';
-        _or?.build();
-        _$failedField = 'not';
-        _not?.build();
-      } catch (e) {
-        throw BuiltValueNestedFieldError(
-          r'GProdutoFiltersInput',
-          _$failedField,
-          e.toString(),
-        );
-      }
-      rethrow;
-    }
-    replace(_$result);
-    return _$result;
-  }
-}
-
-class _$GProdutoInput extends GProdutoInput {
-  @override
-  final String? name;
-  @override
-  final String? description;
-  @override
-  final double? price;
-  @override
-  final double? descounted_price;
-  @override
-  final BuiltList<String?>? images;
-  @override
-  final bool? is_optional;
-  @override
-  final bool? is_multiselect;
-  @override
-  final BuiltList<String?>? abas;
-  @override
-  final GDateTime? publishedAt;
-
-  factory _$GProdutoInput([void Function(GProdutoInputBuilder)? updates]) =>
-      (GProdutoInputBuilder()..update(updates))._build();
-
-  _$GProdutoInput._({
-    this.name,
-    this.description,
-    this.price,
-    this.descounted_price,
-    this.images,
-    this.is_optional,
-    this.is_multiselect,
-    this.abas,
-    this.publishedAt,
-  }) : super._();
-  @override
-  GProdutoInput rebuild(void Function(GProdutoInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
-
-  @override
-  GProdutoInputBuilder toBuilder() => GProdutoInputBuilder()..replace(this);
-
-  @override
-  bool operator ==(Object other) {
-    if (identical(other, this)) return true;
-    return other is GProdutoInput &&
-        name == other.name &&
-        description == other.description &&
-        price == other.price &&
-        descounted_price == other.descounted_price &&
-        images == other.images &&
-        is_optional == other.is_optional &&
-        is_multiselect == other.is_multiselect &&
-        abas == other.abas &&
-        publishedAt == other.publishedAt;
-  }
-
-  @override
-  int get hashCode {
-    var _$hash = 0;
-    _$hash = $jc(_$hash, name.hashCode);
-    _$hash = $jc(_$hash, description.hashCode);
-    _$hash = $jc(_$hash, price.hashCode);
-    _$hash = $jc(_$hash, descounted_price.hashCode);
-    _$hash = $jc(_$hash, images.hashCode);
-    _$hash = $jc(_$hash, is_optional.hashCode);
-    _$hash = $jc(_$hash, is_multiselect.hashCode);
-    _$hash = $jc(_$hash, abas.hashCode);
-    _$hash = $jc(_$hash, publishedAt.hashCode);
-    _$hash = $jf(_$hash);
-    return _$hash;
-  }
-
-  @override
-  String toString() {
-    return (newBuiltValueToStringHelper(r'GProdutoInput')
-          ..add('name', name)
-          ..add('description', description)
-          ..add('price', price)
-          ..add('descounted_price', descounted_price)
-          ..add('images', images)
-          ..add('is_optional', is_optional)
-          ..add('is_multiselect', is_multiselect)
-          ..add('abas', abas)
-          ..add('publishedAt', publishedAt))
-        .toString();
-  }
-}
-
-class GProdutoInputBuilder
-    implements Builder<GProdutoInput, GProdutoInputBuilder> {
-  _$GProdutoInput? _$v;
-
-  String? _name;
-  String? get name => _$this._name;
-  set name(String? name) => _$this._name = name;
-
-  String? _description;
-  String? get description => _$this._description;
-  set description(String? description) => _$this._description = description;
-
-  double? _price;
-  double? get price => _$this._price;
-  set price(double? price) => _$this._price = price;
-
-  double? _descounted_price;
-  double? get descounted_price => _$this._descounted_price;
-  set descounted_price(double? descounted_price) =>
-      _$this._descounted_price = descounted_price;
-
-  ListBuilder<String?>? _images;
-  ListBuilder<String?> get images => _$this._images ??= ListBuilder<String?>();
-  set images(ListBuilder<String?>? images) => _$this._images = images;
-
-  bool? _is_optional;
-  bool? get is_optional => _$this._is_optional;
-  set is_optional(bool? is_optional) => _$this._is_optional = is_optional;
-
-  bool? _is_multiselect;
-  bool? get is_multiselect => _$this._is_multiselect;
-  set is_multiselect(bool? is_multiselect) =>
-      _$this._is_multiselect = is_multiselect;
-
-  ListBuilder<String?>? _abas;
-  ListBuilder<String?> get abas => _$this._abas ??= ListBuilder<String?>();
-  set abas(ListBuilder<String?>? abas) => _$this._abas = abas;
-
-  GDateTimeBuilder? _publishedAt;
-  GDateTimeBuilder get publishedAt =>
-      _$this._publishedAt ??= GDateTimeBuilder();
-  set publishedAt(GDateTimeBuilder? publishedAt) =>
-      _$this._publishedAt = publishedAt;
-
-  GProdutoInputBuilder();
-
-  GProdutoInputBuilder get _$this {
-    final $v = _$v;
-    if ($v != null) {
-      _name = $v.name;
-      _description = $v.description;
-      _price = $v.price;
-      _descounted_price = $v.descounted_price;
-      _images = $v.images?.toBuilder();
-      _is_optional = $v.is_optional;
-      _is_multiselect = $v.is_multiselect;
-      _abas = $v.abas?.toBuilder();
-      _publishedAt = $v.publishedAt?.toBuilder();
-      _$v = null;
-    }
-    return this;
-  }
-
-  @override
-  void replace(GProdutoInput other) {
-    _$v = other as _$GProdutoInput;
-  }
-
-  @override
-  void update(void Function(GProdutoInputBuilder)? updates) {
-    if (updates != null) updates(this);
-  }
-
-  @override
-  GProdutoInput build() => _build();
-
-  _$GProdutoInput _build() {
-    _$GProdutoInput _$result;
-    try {
-      _$result =
-          _$v ??
-          _$GProdutoInput._(
-            name: name,
-            description: description,
-            price: price,
-            descounted_price: descounted_price,
-            images: _images?.build(),
-            is_optional: is_optional,
-            is_multiselect: is_multiselect,
-            abas: _abas?.build(),
-            publishedAt: _publishedAt?.build(),
-          );
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'images';
-        _images?.build();
-
-        _$failedField = 'abas';
-        _abas?.build();
-        _$failedField = 'publishedAt';
-        _publishedAt?.build();
-      } catch (e) {
-        throw BuiltValueNestedFieldError(
-          r'GProdutoInput',
-          _$failedField,
-          e.toString(),
-        );
-      }
-      rethrow;
-    }
-    replace(_$result);
-    return _$result;
-  }
-}
-
-class _$GSettingInput extends GSettingInput {
-  @override
-  final String? banner;
-  @override
-  final String? name;
-  @override
-  final String? logo;
-  @override
-  final String? color;
-  @override
-  final String? address;
-  @override
-  final String? phone_number;
-  @override
-  final String? email;
-  @override
-  final GTime? open_at;
-  @override
-  final GTime? close_at;
-  @override
-  final GDateTime? publishedAt;
-
-  factory _$GSettingInput([void Function(GSettingInputBuilder)? updates]) =>
-      (GSettingInputBuilder()..update(updates))._build();
-
-  _$GSettingInput._({
-    this.banner,
-    this.name,
-    this.logo,
-    this.color,
-    this.address,
-    this.phone_number,
-    this.email,
-    this.open_at,
-    this.close_at,
-    this.publishedAt,
-  }) : super._();
-  @override
-  GSettingInput rebuild(void Function(GSettingInputBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
-
-  @override
-  GSettingInputBuilder toBuilder() => GSettingInputBuilder()..replace(this);
-
-  @override
-  bool operator ==(Object other) {
-    if (identical(other, this)) return true;
-    return other is GSettingInput &&
-        banner == other.banner &&
-        name == other.name &&
-        logo == other.logo &&
-        color == other.color &&
-        address == other.address &&
-        phone_number == other.phone_number &&
-        email == other.email &&
-        open_at == other.open_at &&
-        close_at == other.close_at &&
-        publishedAt == other.publishedAt;
-  }
-
-  @override
-  int get hashCode {
-    var _$hash = 0;
-    _$hash = $jc(_$hash, banner.hashCode);
-    _$hash = $jc(_$hash, name.hashCode);
-    _$hash = $jc(_$hash, logo.hashCode);
-    _$hash = $jc(_$hash, color.hashCode);
-    _$hash = $jc(_$hash, address.hashCode);
-    _$hash = $jc(_$hash, phone_number.hashCode);
-    _$hash = $jc(_$hash, email.hashCode);
-    _$hash = $jc(_$hash, open_at.hashCode);
-    _$hash = $jc(_$hash, close_at.hashCode);
-    _$hash = $jc(_$hash, publishedAt.hashCode);
-    _$hash = $jf(_$hash);
-    return _$hash;
-  }
-
-  @override
-  String toString() {
-    return (newBuiltValueToStringHelper(r'GSettingInput')
-          ..add('banner', banner)
-          ..add('name', name)
-          ..add('logo', logo)
-          ..add('color', color)
-          ..add('address', address)
-          ..add('phone_number', phone_number)
-          ..add('email', email)
-          ..add('open_at', open_at)
-          ..add('close_at', close_at)
-          ..add('publishedAt', publishedAt))
-        .toString();
-  }
-}
-
-class GSettingInputBuilder
-    implements Builder<GSettingInput, GSettingInputBuilder> {
-  _$GSettingInput? _$v;
-
-  String? _banner;
-  String? get banner => _$this._banner;
-  set banner(String? banner) => _$this._banner = banner;
-
-  String? _name;
-  String? get name => _$this._name;
-  set name(String? name) => _$this._name = name;
-
-  String? _logo;
-  String? get logo => _$this._logo;
-  set logo(String? logo) => _$this._logo = logo;
-
-  String? _color;
-  String? get color => _$this._color;
-  set color(String? color) => _$this._color = color;
-
-  String? _address;
-  String? get address => _$this._address;
-  set address(String? address) => _$this._address = address;
-
-  String? _phone_number;
-  String? get phone_number => _$this._phone_number;
-  set phone_number(String? phone_number) => _$this._phone_number = phone_number;
-
-  String? _email;
-  String? get email => _$this._email;
-  set email(String? email) => _$this._email = email;
-
-  GTimeBuilder? _open_at;
-  GTimeBuilder get open_at => _$this._open_at ??= GTimeBuilder();
-  set open_at(GTimeBuilder? open_at) => _$this._open_at = open_at;
-
-  GTimeBuilder? _close_at;
-  GTimeBuilder get close_at => _$this._close_at ??= GTimeBuilder();
-  set close_at(GTimeBuilder? close_at) => _$this._close_at = close_at;
-
-  GDateTimeBuilder? _publishedAt;
-  GDateTimeBuilder get publishedAt =>
-      _$this._publishedAt ??= GDateTimeBuilder();
-  set publishedAt(GDateTimeBuilder? publishedAt) =>
-      _$this._publishedAt = publishedAt;
-
-  GSettingInputBuilder();
-
-  GSettingInputBuilder get _$this {
-    final $v = _$v;
-    if ($v != null) {
-      _banner = $v.banner;
-      _name = $v.name;
-      _logo = $v.logo;
-      _color = $v.color;
-      _address = $v.address;
-      _phone_number = $v.phone_number;
-      _email = $v.email;
-      _open_at = $v.open_at?.toBuilder();
-      _close_at = $v.close_at?.toBuilder();
-      _publishedAt = $v.publishedAt?.toBuilder();
-      _$v = null;
-    }
-    return this;
-  }
-
-  @override
-  void replace(GSettingInput other) {
-    _$v = other as _$GSettingInput;
-  }
-
-  @override
-  void update(void Function(GSettingInputBuilder)? updates) {
-    if (updates != null) updates(this);
-  }
-
-  @override
-  GSettingInput build() => _build();
-
-  _$GSettingInput _build() {
-    _$GSettingInput _$result;
-    try {
-      _$result =
-          _$v ??
-          _$GSettingInput._(
-            banner: banner,
-            name: name,
-            logo: logo,
-            color: color,
-            address: address,
-            phone_number: phone_number,
-            email: email,
-            open_at: _open_at?.build(),
-            close_at: _close_at?.build(),
-            publishedAt: _publishedAt?.build(),
-          );
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'open_at';
-        _open_at?.build();
-        _$failedField = 'close_at';
-        _close_at?.build();
-        _$failedField = 'publishedAt';
-        _publishedAt?.build();
-      } catch (e) {
-        throw BuiltValueNestedFieldError(
-          r'GSettingInput',
           _$failedField,
           e.toString(),
         );
@@ -14016,6 +12859,1269 @@ class GUsersPermissionsUserInputBuilder
       } catch (e) {
         throw BuiltValueNestedFieldError(
           r'GUsersPermissionsUserInput',
+          _$failedField,
+          e.toString(),
+        );
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GAbaFiltersInput extends GAbaFiltersInput {
+  @override
+  final GIDFilterInput? documentId;
+  @override
+  final GStringFilterInput? tab_name;
+  @override
+  final GProdutoFiltersInput? produtos;
+  @override
+  final GIntFilterInput? order;
+  @override
+  final GDateTimeFilterInput? createdAt;
+  @override
+  final GDateTimeFilterInput? updatedAt;
+  @override
+  final GDateTimeFilterInput? publishedAt;
+  @override
+  final BuiltList<GAbaFiltersInput?>? and;
+  @override
+  final BuiltList<GAbaFiltersInput?>? or;
+  @override
+  final GAbaFiltersInput? not;
+
+  factory _$GAbaFiltersInput([
+    void Function(GAbaFiltersInputBuilder)? updates,
+  ]) => (GAbaFiltersInputBuilder()..update(updates))._build();
+
+  _$GAbaFiltersInput._({
+    this.documentId,
+    this.tab_name,
+    this.produtos,
+    this.order,
+    this.createdAt,
+    this.updatedAt,
+    this.publishedAt,
+    this.and,
+    this.or,
+    this.not,
+  }) : super._();
+  @override
+  GAbaFiltersInput rebuild(void Function(GAbaFiltersInputBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GAbaFiltersInputBuilder toBuilder() =>
+      GAbaFiltersInputBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GAbaFiltersInput &&
+        documentId == other.documentId &&
+        tab_name == other.tab_name &&
+        produtos == other.produtos &&
+        order == other.order &&
+        createdAt == other.createdAt &&
+        updatedAt == other.updatedAt &&
+        publishedAt == other.publishedAt &&
+        and == other.and &&
+        or == other.or &&
+        not == other.not;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, documentId.hashCode);
+    _$hash = $jc(_$hash, tab_name.hashCode);
+    _$hash = $jc(_$hash, produtos.hashCode);
+    _$hash = $jc(_$hash, order.hashCode);
+    _$hash = $jc(_$hash, createdAt.hashCode);
+    _$hash = $jc(_$hash, updatedAt.hashCode);
+    _$hash = $jc(_$hash, publishedAt.hashCode);
+    _$hash = $jc(_$hash, and.hashCode);
+    _$hash = $jc(_$hash, or.hashCode);
+    _$hash = $jc(_$hash, not.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'GAbaFiltersInput')
+          ..add('documentId', documentId)
+          ..add('tab_name', tab_name)
+          ..add('produtos', produtos)
+          ..add('order', order)
+          ..add('createdAt', createdAt)
+          ..add('updatedAt', updatedAt)
+          ..add('publishedAt', publishedAt)
+          ..add('and', and)
+          ..add('or', or)
+          ..add('not', not))
+        .toString();
+  }
+}
+
+class GAbaFiltersInputBuilder
+    implements Builder<GAbaFiltersInput, GAbaFiltersInputBuilder> {
+  _$GAbaFiltersInput? _$v;
+
+  GIDFilterInputBuilder? _documentId;
+  GIDFilterInputBuilder get documentId =>
+      _$this._documentId ??= GIDFilterInputBuilder();
+  set documentId(GIDFilterInputBuilder? documentId) =>
+      _$this._documentId = documentId;
+
+  GStringFilterInputBuilder? _tab_name;
+  GStringFilterInputBuilder get tab_name =>
+      _$this._tab_name ??= GStringFilterInputBuilder();
+  set tab_name(GStringFilterInputBuilder? tab_name) =>
+      _$this._tab_name = tab_name;
+
+  GProdutoFiltersInputBuilder? _produtos;
+  GProdutoFiltersInputBuilder get produtos =>
+      _$this._produtos ??= GProdutoFiltersInputBuilder();
+  set produtos(GProdutoFiltersInputBuilder? produtos) =>
+      _$this._produtos = produtos;
+
+  GIntFilterInputBuilder? _order;
+  GIntFilterInputBuilder get order =>
+      _$this._order ??= GIntFilterInputBuilder();
+  set order(GIntFilterInputBuilder? order) => _$this._order = order;
+
+  GDateTimeFilterInputBuilder? _createdAt;
+  GDateTimeFilterInputBuilder get createdAt =>
+      _$this._createdAt ??= GDateTimeFilterInputBuilder();
+  set createdAt(GDateTimeFilterInputBuilder? createdAt) =>
+      _$this._createdAt = createdAt;
+
+  GDateTimeFilterInputBuilder? _updatedAt;
+  GDateTimeFilterInputBuilder get updatedAt =>
+      _$this._updatedAt ??= GDateTimeFilterInputBuilder();
+  set updatedAt(GDateTimeFilterInputBuilder? updatedAt) =>
+      _$this._updatedAt = updatedAt;
+
+  GDateTimeFilterInputBuilder? _publishedAt;
+  GDateTimeFilterInputBuilder get publishedAt =>
+      _$this._publishedAt ??= GDateTimeFilterInputBuilder();
+  set publishedAt(GDateTimeFilterInputBuilder? publishedAt) =>
+      _$this._publishedAt = publishedAt;
+
+  ListBuilder<GAbaFiltersInput?>? _and;
+  ListBuilder<GAbaFiltersInput?> get and =>
+      _$this._and ??= ListBuilder<GAbaFiltersInput?>();
+  set and(ListBuilder<GAbaFiltersInput?>? and) => _$this._and = and;
+
+  ListBuilder<GAbaFiltersInput?>? _or;
+  ListBuilder<GAbaFiltersInput?> get or =>
+      _$this._or ??= ListBuilder<GAbaFiltersInput?>();
+  set or(ListBuilder<GAbaFiltersInput?>? or) => _$this._or = or;
+
+  GAbaFiltersInputBuilder? _not;
+  GAbaFiltersInputBuilder get not => _$this._not ??= GAbaFiltersInputBuilder();
+  set not(GAbaFiltersInputBuilder? not) => _$this._not = not;
+
+  GAbaFiltersInputBuilder();
+
+  GAbaFiltersInputBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _documentId = $v.documentId?.toBuilder();
+      _tab_name = $v.tab_name?.toBuilder();
+      _produtos = $v.produtos?.toBuilder();
+      _order = $v.order?.toBuilder();
+      _createdAt = $v.createdAt?.toBuilder();
+      _updatedAt = $v.updatedAt?.toBuilder();
+      _publishedAt = $v.publishedAt?.toBuilder();
+      _and = $v.and?.toBuilder();
+      _or = $v.or?.toBuilder();
+      _not = $v.not?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GAbaFiltersInput other) {
+    _$v = other as _$GAbaFiltersInput;
+  }
+
+  @override
+  void update(void Function(GAbaFiltersInputBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GAbaFiltersInput build() => _build();
+
+  _$GAbaFiltersInput _build() {
+    _$GAbaFiltersInput _$result;
+    try {
+      _$result =
+          _$v ??
+          _$GAbaFiltersInput._(
+            documentId: _documentId?.build(),
+            tab_name: _tab_name?.build(),
+            produtos: _produtos?.build(),
+            order: _order?.build(),
+            createdAt: _createdAt?.build(),
+            updatedAt: _updatedAt?.build(),
+            publishedAt: _publishedAt?.build(),
+            and: _and?.build(),
+            or: _or?.build(),
+            not: _not?.build(),
+          );
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'documentId';
+        _documentId?.build();
+        _$failedField = 'tab_name';
+        _tab_name?.build();
+        _$failedField = 'produtos';
+        _produtos?.build();
+        _$failedField = 'order';
+        _order?.build();
+        _$failedField = 'createdAt';
+        _createdAt?.build();
+        _$failedField = 'updatedAt';
+        _updatedAt?.build();
+        _$failedField = 'publishedAt';
+        _publishedAt?.build();
+        _$failedField = 'and';
+        _and?.build();
+        _$failedField = 'or';
+        _or?.build();
+        _$failedField = 'not';
+        _not?.build();
+      } catch (e) {
+        throw BuiltValueNestedFieldError(
+          r'GAbaFiltersInput',
+          _$failedField,
+          e.toString(),
+        );
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GAbaInput extends GAbaInput {
+  @override
+  final String? tab_name;
+  @override
+  final BuiltList<String?>? produtos;
+  @override
+  final int? order;
+  @override
+  final GDateTime? publishedAt;
+
+  factory _$GAbaInput([void Function(GAbaInputBuilder)? updates]) =>
+      (GAbaInputBuilder()..update(updates))._build();
+
+  _$GAbaInput._({this.tab_name, this.produtos, this.order, this.publishedAt})
+    : super._();
+  @override
+  GAbaInput rebuild(void Function(GAbaInputBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GAbaInputBuilder toBuilder() => GAbaInputBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GAbaInput &&
+        tab_name == other.tab_name &&
+        produtos == other.produtos &&
+        order == other.order &&
+        publishedAt == other.publishedAt;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, tab_name.hashCode);
+    _$hash = $jc(_$hash, produtos.hashCode);
+    _$hash = $jc(_$hash, order.hashCode);
+    _$hash = $jc(_$hash, publishedAt.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'GAbaInput')
+          ..add('tab_name', tab_name)
+          ..add('produtos', produtos)
+          ..add('order', order)
+          ..add('publishedAt', publishedAt))
+        .toString();
+  }
+}
+
+class GAbaInputBuilder implements Builder<GAbaInput, GAbaInputBuilder> {
+  _$GAbaInput? _$v;
+
+  String? _tab_name;
+  String? get tab_name => _$this._tab_name;
+  set tab_name(String? tab_name) => _$this._tab_name = tab_name;
+
+  ListBuilder<String?>? _produtos;
+  ListBuilder<String?> get produtos =>
+      _$this._produtos ??= ListBuilder<String?>();
+  set produtos(ListBuilder<String?>? produtos) => _$this._produtos = produtos;
+
+  int? _order;
+  int? get order => _$this._order;
+  set order(int? order) => _$this._order = order;
+
+  GDateTimeBuilder? _publishedAt;
+  GDateTimeBuilder get publishedAt =>
+      _$this._publishedAt ??= GDateTimeBuilder();
+  set publishedAt(GDateTimeBuilder? publishedAt) =>
+      _$this._publishedAt = publishedAt;
+
+  GAbaInputBuilder();
+
+  GAbaInputBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _tab_name = $v.tab_name;
+      _produtos = $v.produtos?.toBuilder();
+      _order = $v.order;
+      _publishedAt = $v.publishedAt?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GAbaInput other) {
+    _$v = other as _$GAbaInput;
+  }
+
+  @override
+  void update(void Function(GAbaInputBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GAbaInput build() => _build();
+
+  _$GAbaInput _build() {
+    _$GAbaInput _$result;
+    try {
+      _$result =
+          _$v ??
+          _$GAbaInput._(
+            tab_name: tab_name,
+            produtos: _produtos?.build(),
+            order: order,
+            publishedAt: _publishedAt?.build(),
+          );
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'produtos';
+        _produtos?.build();
+
+        _$failedField = 'publishedAt';
+        _publishedAt?.build();
+      } catch (e) {
+        throw BuiltValueNestedFieldError(
+          r'GAbaInput',
+          _$failedField,
+          e.toString(),
+        );
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GExtraFiltersInput extends GExtraFiltersInput {
+  @override
+  final GIDFilterInput? documentId;
+  @override
+  final GStringFilterInput? name;
+  @override
+  final GFloatFilterInput? price;
+  @override
+  final GBooleanFilterInput? isAvailable;
+  @override
+  final GDateTimeFilterInput? createdAt;
+  @override
+  final GDateTimeFilterInput? updatedAt;
+  @override
+  final GDateTimeFilterInput? publishedAt;
+  @override
+  final BuiltList<GExtraFiltersInput?>? and;
+  @override
+  final BuiltList<GExtraFiltersInput?>? or;
+  @override
+  final GExtraFiltersInput? not;
+
+  factory _$GExtraFiltersInput([
+    void Function(GExtraFiltersInputBuilder)? updates,
+  ]) => (GExtraFiltersInputBuilder()..update(updates))._build();
+
+  _$GExtraFiltersInput._({
+    this.documentId,
+    this.name,
+    this.price,
+    this.isAvailable,
+    this.createdAt,
+    this.updatedAt,
+    this.publishedAt,
+    this.and,
+    this.or,
+    this.not,
+  }) : super._();
+  @override
+  GExtraFiltersInput rebuild(
+    void Function(GExtraFiltersInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
+
+  @override
+  GExtraFiltersInputBuilder toBuilder() =>
+      GExtraFiltersInputBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GExtraFiltersInput &&
+        documentId == other.documentId &&
+        name == other.name &&
+        price == other.price &&
+        isAvailable == other.isAvailable &&
+        createdAt == other.createdAt &&
+        updatedAt == other.updatedAt &&
+        publishedAt == other.publishedAt &&
+        and == other.and &&
+        or == other.or &&
+        not == other.not;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, documentId.hashCode);
+    _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jc(_$hash, price.hashCode);
+    _$hash = $jc(_$hash, isAvailable.hashCode);
+    _$hash = $jc(_$hash, createdAt.hashCode);
+    _$hash = $jc(_$hash, updatedAt.hashCode);
+    _$hash = $jc(_$hash, publishedAt.hashCode);
+    _$hash = $jc(_$hash, and.hashCode);
+    _$hash = $jc(_$hash, or.hashCode);
+    _$hash = $jc(_$hash, not.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'GExtraFiltersInput')
+          ..add('documentId', documentId)
+          ..add('name', name)
+          ..add('price', price)
+          ..add('isAvailable', isAvailable)
+          ..add('createdAt', createdAt)
+          ..add('updatedAt', updatedAt)
+          ..add('publishedAt', publishedAt)
+          ..add('and', and)
+          ..add('or', or)
+          ..add('not', not))
+        .toString();
+  }
+}
+
+class GExtraFiltersInputBuilder
+    implements Builder<GExtraFiltersInput, GExtraFiltersInputBuilder> {
+  _$GExtraFiltersInput? _$v;
+
+  GIDFilterInputBuilder? _documentId;
+  GIDFilterInputBuilder get documentId =>
+      _$this._documentId ??= GIDFilterInputBuilder();
+  set documentId(GIDFilterInputBuilder? documentId) =>
+      _$this._documentId = documentId;
+
+  GStringFilterInputBuilder? _name;
+  GStringFilterInputBuilder get name =>
+      _$this._name ??= GStringFilterInputBuilder();
+  set name(GStringFilterInputBuilder? name) => _$this._name = name;
+
+  GFloatFilterInputBuilder? _price;
+  GFloatFilterInputBuilder get price =>
+      _$this._price ??= GFloatFilterInputBuilder();
+  set price(GFloatFilterInputBuilder? price) => _$this._price = price;
+
+  GBooleanFilterInputBuilder? _isAvailable;
+  GBooleanFilterInputBuilder get isAvailable =>
+      _$this._isAvailable ??= GBooleanFilterInputBuilder();
+  set isAvailable(GBooleanFilterInputBuilder? isAvailable) =>
+      _$this._isAvailable = isAvailable;
+
+  GDateTimeFilterInputBuilder? _createdAt;
+  GDateTimeFilterInputBuilder get createdAt =>
+      _$this._createdAt ??= GDateTimeFilterInputBuilder();
+  set createdAt(GDateTimeFilterInputBuilder? createdAt) =>
+      _$this._createdAt = createdAt;
+
+  GDateTimeFilterInputBuilder? _updatedAt;
+  GDateTimeFilterInputBuilder get updatedAt =>
+      _$this._updatedAt ??= GDateTimeFilterInputBuilder();
+  set updatedAt(GDateTimeFilterInputBuilder? updatedAt) =>
+      _$this._updatedAt = updatedAt;
+
+  GDateTimeFilterInputBuilder? _publishedAt;
+  GDateTimeFilterInputBuilder get publishedAt =>
+      _$this._publishedAt ??= GDateTimeFilterInputBuilder();
+  set publishedAt(GDateTimeFilterInputBuilder? publishedAt) =>
+      _$this._publishedAt = publishedAt;
+
+  ListBuilder<GExtraFiltersInput?>? _and;
+  ListBuilder<GExtraFiltersInput?> get and =>
+      _$this._and ??= ListBuilder<GExtraFiltersInput?>();
+  set and(ListBuilder<GExtraFiltersInput?>? and) => _$this._and = and;
+
+  ListBuilder<GExtraFiltersInput?>? _or;
+  ListBuilder<GExtraFiltersInput?> get or =>
+      _$this._or ??= ListBuilder<GExtraFiltersInput?>();
+  set or(ListBuilder<GExtraFiltersInput?>? or) => _$this._or = or;
+
+  GExtraFiltersInputBuilder? _not;
+  GExtraFiltersInputBuilder get not =>
+      _$this._not ??= GExtraFiltersInputBuilder();
+  set not(GExtraFiltersInputBuilder? not) => _$this._not = not;
+
+  GExtraFiltersInputBuilder();
+
+  GExtraFiltersInputBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _documentId = $v.documentId?.toBuilder();
+      _name = $v.name?.toBuilder();
+      _price = $v.price?.toBuilder();
+      _isAvailable = $v.isAvailable?.toBuilder();
+      _createdAt = $v.createdAt?.toBuilder();
+      _updatedAt = $v.updatedAt?.toBuilder();
+      _publishedAt = $v.publishedAt?.toBuilder();
+      _and = $v.and?.toBuilder();
+      _or = $v.or?.toBuilder();
+      _not = $v.not?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GExtraFiltersInput other) {
+    _$v = other as _$GExtraFiltersInput;
+  }
+
+  @override
+  void update(void Function(GExtraFiltersInputBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GExtraFiltersInput build() => _build();
+
+  _$GExtraFiltersInput _build() {
+    _$GExtraFiltersInput _$result;
+    try {
+      _$result =
+          _$v ??
+          _$GExtraFiltersInput._(
+            documentId: _documentId?.build(),
+            name: _name?.build(),
+            price: _price?.build(),
+            isAvailable: _isAvailable?.build(),
+            createdAt: _createdAt?.build(),
+            updatedAt: _updatedAt?.build(),
+            publishedAt: _publishedAt?.build(),
+            and: _and?.build(),
+            or: _or?.build(),
+            not: _not?.build(),
+          );
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'documentId';
+        _documentId?.build();
+        _$failedField = 'name';
+        _name?.build();
+        _$failedField = 'price';
+        _price?.build();
+        _$failedField = 'isAvailable';
+        _isAvailable?.build();
+        _$failedField = 'createdAt';
+        _createdAt?.build();
+        _$failedField = 'updatedAt';
+        _updatedAt?.build();
+        _$failedField = 'publishedAt';
+        _publishedAt?.build();
+        _$failedField = 'and';
+        _and?.build();
+        _$failedField = 'or';
+        _or?.build();
+        _$failedField = 'not';
+        _not?.build();
+      } catch (e) {
+        throw BuiltValueNestedFieldError(
+          r'GExtraFiltersInput',
+          _$failedField,
+          e.toString(),
+        );
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GExtraInput extends GExtraInput {
+  @override
+  final String? name;
+  @override
+  final double? price;
+  @override
+  final bool? isAvailable;
+  @override
+  final GDateTime? publishedAt;
+
+  factory _$GExtraInput([void Function(GExtraInputBuilder)? updates]) =>
+      (GExtraInputBuilder()..update(updates))._build();
+
+  _$GExtraInput._({this.name, this.price, this.isAvailable, this.publishedAt})
+    : super._();
+  @override
+  GExtraInput rebuild(void Function(GExtraInputBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GExtraInputBuilder toBuilder() => GExtraInputBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GExtraInput &&
+        name == other.name &&
+        price == other.price &&
+        isAvailable == other.isAvailable &&
+        publishedAt == other.publishedAt;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jc(_$hash, price.hashCode);
+    _$hash = $jc(_$hash, isAvailable.hashCode);
+    _$hash = $jc(_$hash, publishedAt.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'GExtraInput')
+          ..add('name', name)
+          ..add('price', price)
+          ..add('isAvailable', isAvailable)
+          ..add('publishedAt', publishedAt))
+        .toString();
+  }
+}
+
+class GExtraInputBuilder implements Builder<GExtraInput, GExtraInputBuilder> {
+  _$GExtraInput? _$v;
+
+  String? _name;
+  String? get name => _$this._name;
+  set name(String? name) => _$this._name = name;
+
+  double? _price;
+  double? get price => _$this._price;
+  set price(double? price) => _$this._price = price;
+
+  bool? _isAvailable;
+  bool? get isAvailable => _$this._isAvailable;
+  set isAvailable(bool? isAvailable) => _$this._isAvailable = isAvailable;
+
+  GDateTimeBuilder? _publishedAt;
+  GDateTimeBuilder get publishedAt =>
+      _$this._publishedAt ??= GDateTimeBuilder();
+  set publishedAt(GDateTimeBuilder? publishedAt) =>
+      _$this._publishedAt = publishedAt;
+
+  GExtraInputBuilder();
+
+  GExtraInputBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _name = $v.name;
+      _price = $v.price;
+      _isAvailable = $v.isAvailable;
+      _publishedAt = $v.publishedAt?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GExtraInput other) {
+    _$v = other as _$GExtraInput;
+  }
+
+  @override
+  void update(void Function(GExtraInputBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GExtraInput build() => _build();
+
+  _$GExtraInput _build() {
+    _$GExtraInput _$result;
+    try {
+      _$result =
+          _$v ??
+          _$GExtraInput._(
+            name: name,
+            price: price,
+            isAvailable: isAvailable,
+            publishedAt: _publishedAt?.build(),
+          );
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'publishedAt';
+        _publishedAt?.build();
+      } catch (e) {
+        throw BuiltValueNestedFieldError(
+          r'GExtraInput',
+          _$failedField,
+          e.toString(),
+        );
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProdutoFiltersInput extends GProdutoFiltersInput {
+  @override
+  final GIDFilterInput? documentId;
+  @override
+  final GStringFilterInput? name;
+  @override
+  final GStringFilterInput? description;
+  @override
+  final GFloatFilterInput? price;
+  @override
+  final GFloatFilterInput? descounted_price;
+  @override
+  final GBooleanFilterInput? is_optional;
+  @override
+  final GBooleanFilterInput? is_multiselect;
+  @override
+  final GAbaFiltersInput? abas;
+  @override
+  final GDateTimeFilterInput? createdAt;
+  @override
+  final GDateTimeFilterInput? updatedAt;
+  @override
+  final GDateTimeFilterInput? publishedAt;
+  @override
+  final BuiltList<GProdutoFiltersInput?>? and;
+  @override
+  final BuiltList<GProdutoFiltersInput?>? or;
+  @override
+  final GProdutoFiltersInput? not;
+
+  factory _$GProdutoFiltersInput([
+    void Function(GProdutoFiltersInputBuilder)? updates,
+  ]) => (GProdutoFiltersInputBuilder()..update(updates))._build();
+
+  _$GProdutoFiltersInput._({
+    this.documentId,
+    this.name,
+    this.description,
+    this.price,
+    this.descounted_price,
+    this.is_optional,
+    this.is_multiselect,
+    this.abas,
+    this.createdAt,
+    this.updatedAt,
+    this.publishedAt,
+    this.and,
+    this.or,
+    this.not,
+  }) : super._();
+  @override
+  GProdutoFiltersInput rebuild(
+    void Function(GProdutoFiltersInputBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
+
+  @override
+  GProdutoFiltersInputBuilder toBuilder() =>
+      GProdutoFiltersInputBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProdutoFiltersInput &&
+        documentId == other.documentId &&
+        name == other.name &&
+        description == other.description &&
+        price == other.price &&
+        descounted_price == other.descounted_price &&
+        is_optional == other.is_optional &&
+        is_multiselect == other.is_multiselect &&
+        abas == other.abas &&
+        createdAt == other.createdAt &&
+        updatedAt == other.updatedAt &&
+        publishedAt == other.publishedAt &&
+        and == other.and &&
+        or == other.or &&
+        not == other.not;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, documentId.hashCode);
+    _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jc(_$hash, description.hashCode);
+    _$hash = $jc(_$hash, price.hashCode);
+    _$hash = $jc(_$hash, descounted_price.hashCode);
+    _$hash = $jc(_$hash, is_optional.hashCode);
+    _$hash = $jc(_$hash, is_multiselect.hashCode);
+    _$hash = $jc(_$hash, abas.hashCode);
+    _$hash = $jc(_$hash, createdAt.hashCode);
+    _$hash = $jc(_$hash, updatedAt.hashCode);
+    _$hash = $jc(_$hash, publishedAt.hashCode);
+    _$hash = $jc(_$hash, and.hashCode);
+    _$hash = $jc(_$hash, or.hashCode);
+    _$hash = $jc(_$hash, not.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'GProdutoFiltersInput')
+          ..add('documentId', documentId)
+          ..add('name', name)
+          ..add('description', description)
+          ..add('price', price)
+          ..add('descounted_price', descounted_price)
+          ..add('is_optional', is_optional)
+          ..add('is_multiselect', is_multiselect)
+          ..add('abas', abas)
+          ..add('createdAt', createdAt)
+          ..add('updatedAt', updatedAt)
+          ..add('publishedAt', publishedAt)
+          ..add('and', and)
+          ..add('or', or)
+          ..add('not', not))
+        .toString();
+  }
+}
+
+class GProdutoFiltersInputBuilder
+    implements Builder<GProdutoFiltersInput, GProdutoFiltersInputBuilder> {
+  _$GProdutoFiltersInput? _$v;
+
+  GIDFilterInputBuilder? _documentId;
+  GIDFilterInputBuilder get documentId =>
+      _$this._documentId ??= GIDFilterInputBuilder();
+  set documentId(GIDFilterInputBuilder? documentId) =>
+      _$this._documentId = documentId;
+
+  GStringFilterInputBuilder? _name;
+  GStringFilterInputBuilder get name =>
+      _$this._name ??= GStringFilterInputBuilder();
+  set name(GStringFilterInputBuilder? name) => _$this._name = name;
+
+  GStringFilterInputBuilder? _description;
+  GStringFilterInputBuilder get description =>
+      _$this._description ??= GStringFilterInputBuilder();
+  set description(GStringFilterInputBuilder? description) =>
+      _$this._description = description;
+
+  GFloatFilterInputBuilder? _price;
+  GFloatFilterInputBuilder get price =>
+      _$this._price ??= GFloatFilterInputBuilder();
+  set price(GFloatFilterInputBuilder? price) => _$this._price = price;
+
+  GFloatFilterInputBuilder? _descounted_price;
+  GFloatFilterInputBuilder get descounted_price =>
+      _$this._descounted_price ??= GFloatFilterInputBuilder();
+  set descounted_price(GFloatFilterInputBuilder? descounted_price) =>
+      _$this._descounted_price = descounted_price;
+
+  GBooleanFilterInputBuilder? _is_optional;
+  GBooleanFilterInputBuilder get is_optional =>
+      _$this._is_optional ??= GBooleanFilterInputBuilder();
+  set is_optional(GBooleanFilterInputBuilder? is_optional) =>
+      _$this._is_optional = is_optional;
+
+  GBooleanFilterInputBuilder? _is_multiselect;
+  GBooleanFilterInputBuilder get is_multiselect =>
+      _$this._is_multiselect ??= GBooleanFilterInputBuilder();
+  set is_multiselect(GBooleanFilterInputBuilder? is_multiselect) =>
+      _$this._is_multiselect = is_multiselect;
+
+  GAbaFiltersInputBuilder? _abas;
+  GAbaFiltersInputBuilder get abas =>
+      _$this._abas ??= GAbaFiltersInputBuilder();
+  set abas(GAbaFiltersInputBuilder? abas) => _$this._abas = abas;
+
+  GDateTimeFilterInputBuilder? _createdAt;
+  GDateTimeFilterInputBuilder get createdAt =>
+      _$this._createdAt ??= GDateTimeFilterInputBuilder();
+  set createdAt(GDateTimeFilterInputBuilder? createdAt) =>
+      _$this._createdAt = createdAt;
+
+  GDateTimeFilterInputBuilder? _updatedAt;
+  GDateTimeFilterInputBuilder get updatedAt =>
+      _$this._updatedAt ??= GDateTimeFilterInputBuilder();
+  set updatedAt(GDateTimeFilterInputBuilder? updatedAt) =>
+      _$this._updatedAt = updatedAt;
+
+  GDateTimeFilterInputBuilder? _publishedAt;
+  GDateTimeFilterInputBuilder get publishedAt =>
+      _$this._publishedAt ??= GDateTimeFilterInputBuilder();
+  set publishedAt(GDateTimeFilterInputBuilder? publishedAt) =>
+      _$this._publishedAt = publishedAt;
+
+  ListBuilder<GProdutoFiltersInput?>? _and;
+  ListBuilder<GProdutoFiltersInput?> get and =>
+      _$this._and ??= ListBuilder<GProdutoFiltersInput?>();
+  set and(ListBuilder<GProdutoFiltersInput?>? and) => _$this._and = and;
+
+  ListBuilder<GProdutoFiltersInput?>? _or;
+  ListBuilder<GProdutoFiltersInput?> get or =>
+      _$this._or ??= ListBuilder<GProdutoFiltersInput?>();
+  set or(ListBuilder<GProdutoFiltersInput?>? or) => _$this._or = or;
+
+  GProdutoFiltersInputBuilder? _not;
+  GProdutoFiltersInputBuilder get not =>
+      _$this._not ??= GProdutoFiltersInputBuilder();
+  set not(GProdutoFiltersInputBuilder? not) => _$this._not = not;
+
+  GProdutoFiltersInputBuilder();
+
+  GProdutoFiltersInputBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _documentId = $v.documentId?.toBuilder();
+      _name = $v.name?.toBuilder();
+      _description = $v.description?.toBuilder();
+      _price = $v.price?.toBuilder();
+      _descounted_price = $v.descounted_price?.toBuilder();
+      _is_optional = $v.is_optional?.toBuilder();
+      _is_multiselect = $v.is_multiselect?.toBuilder();
+      _abas = $v.abas?.toBuilder();
+      _createdAt = $v.createdAt?.toBuilder();
+      _updatedAt = $v.updatedAt?.toBuilder();
+      _publishedAt = $v.publishedAt?.toBuilder();
+      _and = $v.and?.toBuilder();
+      _or = $v.or?.toBuilder();
+      _not = $v.not?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProdutoFiltersInput other) {
+    _$v = other as _$GProdutoFiltersInput;
+  }
+
+  @override
+  void update(void Function(GProdutoFiltersInputBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProdutoFiltersInput build() => _build();
+
+  _$GProdutoFiltersInput _build() {
+    _$GProdutoFiltersInput _$result;
+    try {
+      _$result =
+          _$v ??
+          _$GProdutoFiltersInput._(
+            documentId: _documentId?.build(),
+            name: _name?.build(),
+            description: _description?.build(),
+            price: _price?.build(),
+            descounted_price: _descounted_price?.build(),
+            is_optional: _is_optional?.build(),
+            is_multiselect: _is_multiselect?.build(),
+            abas: _abas?.build(),
+            createdAt: _createdAt?.build(),
+            updatedAt: _updatedAt?.build(),
+            publishedAt: _publishedAt?.build(),
+            and: _and?.build(),
+            or: _or?.build(),
+            not: _not?.build(),
+          );
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'documentId';
+        _documentId?.build();
+        _$failedField = 'name';
+        _name?.build();
+        _$failedField = 'description';
+        _description?.build();
+        _$failedField = 'price';
+        _price?.build();
+        _$failedField = 'descounted_price';
+        _descounted_price?.build();
+        _$failedField = 'is_optional';
+        _is_optional?.build();
+        _$failedField = 'is_multiselect';
+        _is_multiselect?.build();
+        _$failedField = 'abas';
+        _abas?.build();
+        _$failedField = 'createdAt';
+        _createdAt?.build();
+        _$failedField = 'updatedAt';
+        _updatedAt?.build();
+        _$failedField = 'publishedAt';
+        _publishedAt?.build();
+        _$failedField = 'and';
+        _and?.build();
+        _$failedField = 'or';
+        _or?.build();
+        _$failedField = 'not';
+        _not?.build();
+      } catch (e) {
+        throw BuiltValueNestedFieldError(
+          r'GProdutoFiltersInput',
+          _$failedField,
+          e.toString(),
+        );
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+class _$GProdutoInput extends GProdutoInput {
+  @override
+  final String? name;
+  @override
+  final String? description;
+  @override
+  final double? price;
+  @override
+  final double? descounted_price;
+  @override
+  final BuiltList<String?>? images;
+  @override
+  final bool? is_optional;
+  @override
+  final bool? is_multiselect;
+  @override
+  final BuiltList<String?>? abas;
+  @override
+  final GDateTime? publishedAt;
+
+  factory _$GProdutoInput([void Function(GProdutoInputBuilder)? updates]) =>
+      (GProdutoInputBuilder()..update(updates))._build();
+
+  _$GProdutoInput._({
+    this.name,
+    this.description,
+    this.price,
+    this.descounted_price,
+    this.images,
+    this.is_optional,
+    this.is_multiselect,
+    this.abas,
+    this.publishedAt,
+  }) : super._();
+  @override
+  GProdutoInput rebuild(void Function(GProdutoInputBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  GProdutoInputBuilder toBuilder() => GProdutoInputBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is GProdutoInput &&
+        name == other.name &&
+        description == other.description &&
+        price == other.price &&
+        descounted_price == other.descounted_price &&
+        images == other.images &&
+        is_optional == other.is_optional &&
+        is_multiselect == other.is_multiselect &&
+        abas == other.abas &&
+        publishedAt == other.publishedAt;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jc(_$hash, description.hashCode);
+    _$hash = $jc(_$hash, price.hashCode);
+    _$hash = $jc(_$hash, descounted_price.hashCode);
+    _$hash = $jc(_$hash, images.hashCode);
+    _$hash = $jc(_$hash, is_optional.hashCode);
+    _$hash = $jc(_$hash, is_multiselect.hashCode);
+    _$hash = $jc(_$hash, abas.hashCode);
+    _$hash = $jc(_$hash, publishedAt.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'GProdutoInput')
+          ..add('name', name)
+          ..add('description', description)
+          ..add('price', price)
+          ..add('descounted_price', descounted_price)
+          ..add('images', images)
+          ..add('is_optional', is_optional)
+          ..add('is_multiselect', is_multiselect)
+          ..add('abas', abas)
+          ..add('publishedAt', publishedAt))
+        .toString();
+  }
+}
+
+class GProdutoInputBuilder
+    implements Builder<GProdutoInput, GProdutoInputBuilder> {
+  _$GProdutoInput? _$v;
+
+  String? _name;
+  String? get name => _$this._name;
+  set name(String? name) => _$this._name = name;
+
+  String? _description;
+  String? get description => _$this._description;
+  set description(String? description) => _$this._description = description;
+
+  double? _price;
+  double? get price => _$this._price;
+  set price(double? price) => _$this._price = price;
+
+  double? _descounted_price;
+  double? get descounted_price => _$this._descounted_price;
+  set descounted_price(double? descounted_price) =>
+      _$this._descounted_price = descounted_price;
+
+  ListBuilder<String?>? _images;
+  ListBuilder<String?> get images => _$this._images ??= ListBuilder<String?>();
+  set images(ListBuilder<String?>? images) => _$this._images = images;
+
+  bool? _is_optional;
+  bool? get is_optional => _$this._is_optional;
+  set is_optional(bool? is_optional) => _$this._is_optional = is_optional;
+
+  bool? _is_multiselect;
+  bool? get is_multiselect => _$this._is_multiselect;
+  set is_multiselect(bool? is_multiselect) =>
+      _$this._is_multiselect = is_multiselect;
+
+  ListBuilder<String?>? _abas;
+  ListBuilder<String?> get abas => _$this._abas ??= ListBuilder<String?>();
+  set abas(ListBuilder<String?>? abas) => _$this._abas = abas;
+
+  GDateTimeBuilder? _publishedAt;
+  GDateTimeBuilder get publishedAt =>
+      _$this._publishedAt ??= GDateTimeBuilder();
+  set publishedAt(GDateTimeBuilder? publishedAt) =>
+      _$this._publishedAt = publishedAt;
+
+  GProdutoInputBuilder();
+
+  GProdutoInputBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _name = $v.name;
+      _description = $v.description;
+      _price = $v.price;
+      _descounted_price = $v.descounted_price;
+      _images = $v.images?.toBuilder();
+      _is_optional = $v.is_optional;
+      _is_multiselect = $v.is_multiselect;
+      _abas = $v.abas?.toBuilder();
+      _publishedAt = $v.publishedAt?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(GProdutoInput other) {
+    _$v = other as _$GProdutoInput;
+  }
+
+  @override
+  void update(void Function(GProdutoInputBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  GProdutoInput build() => _build();
+
+  _$GProdutoInput _build() {
+    _$GProdutoInput _$result;
+    try {
+      _$result =
+          _$v ??
+          _$GProdutoInput._(
+            name: name,
+            description: description,
+            price: price,
+            descounted_price: descounted_price,
+            images: _images?.build(),
+            is_optional: is_optional,
+            is_multiselect: is_multiselect,
+            abas: _abas?.build(),
+            publishedAt: _publishedAt?.build(),
+          );
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'images';
+        _images?.build();
+
+        _$failedField = 'abas';
+        _abas?.build();
+        _$failedField = 'publishedAt';
+        _publishedAt?.build();
+      } catch (e) {
+        throw BuiltValueNestedFieldError(
+          r'GProdutoInput',
           _$failedField,
           e.toString(),
         );

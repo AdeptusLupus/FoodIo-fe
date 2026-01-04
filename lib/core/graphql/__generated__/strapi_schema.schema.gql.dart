@@ -36,18 +36,6 @@ abstract class GDateTime implements Built<GDateTime, GDateTimeBuilder> {
           (Object serialized) => GDateTime((serialized as String?)));
 }
 
-abstract class GTime implements Built<GTime, GTimeBuilder> {
-  GTime._();
-
-  factory GTime([String? value]) =>
-      _$GTime((b) => value != null ? (b..value = value) : b);
-
-  String get value;
-  @BuiltValueSerializer(custom: true)
-  static Serializer<GTime> get serializer => _i1.DefaultScalarSerializer<GTime>(
-      (Object serialized) => GTime((serialized as String?)));
-}
-
 class GPublicationStatus extends EnumClass {
   const GPublicationStatus._(String name) : super(name);
 
@@ -386,201 +374,6 @@ abstract class GJSONFilterInput
   static GJSONFilterInput? fromJson(Map<String, dynamic> json) =>
       _i2.serializers.deserializeWith(
         GJSONFilterInput.serializer,
-        json,
-      );
-}
-
-class GENUM_ABA_TYPE extends EnumClass {
-  const GENUM_ABA_TYPE._(String name) : super(name);
-
-  static const GENUM_ABA_TYPE Escolhido_a_mao = _$gENUMABATYPEEscolhido_a_mao;
-
-  static const GENUM_ABA_TYPE Promocoes = _$gENUMABATYPEPromocoes;
-
-  static const GENUM_ABA_TYPE Pratos_Principais =
-      _$gENUMABATYPEPratos_Principais;
-
-  static const GENUM_ABA_TYPE Entradas = _$gENUMABATYPEEntradas;
-
-  static const GENUM_ABA_TYPE Acompanhamentos = _$gENUMABATYPEAcompanhamentos;
-
-  static const GENUM_ABA_TYPE Combo = _$gENUMABATYPECombo;
-
-  static const GENUM_ABA_TYPE Burgers = _$gENUMABATYPEBurgers;
-
-  static const GENUM_ABA_TYPE Pizzas_Grandes = _$gENUMABATYPEPizzas_Grandes;
-
-  static const GENUM_ABA_TYPE Pizzas_Medias = _$gENUMABATYPEPizzas_Medias;
-
-  static const GENUM_ABA_TYPE Pizzas_Pequenas = _$gENUMABATYPEPizzas_Pequenas;
-
-  static const GENUM_ABA_TYPE Pizzas_Tradicionais =
-      _$gENUMABATYPEPizzas_Tradicionais;
-
-  static const GENUM_ABA_TYPE Bebidas = _$gENUMABATYPEBebidas;
-
-  static const GENUM_ABA_TYPE Novos = _$gENUMABATYPENovos;
-
-  static const GENUM_ABA_TYPE Recentes = _$gENUMABATYPERecentes;
-
-  static const GENUM_ABA_TYPE Outros = _$gENUMABATYPEOutros;
-
-  static Serializer<GENUM_ABA_TYPE> get serializer => _$gENUMABATYPESerializer;
-
-  static BuiltSet<GENUM_ABA_TYPE> get values => _$gENUMABATYPEValues;
-
-  static GENUM_ABA_TYPE valueOf(String name) => _$gENUMABATYPEValueOf(name);
-}
-
-abstract class GAbaFiltersInput
-    implements Built<GAbaFiltersInput, GAbaFiltersInputBuilder> {
-  GAbaFiltersInput._();
-
-  factory GAbaFiltersInput([void Function(GAbaFiltersInputBuilder b) updates]) =
-      _$GAbaFiltersInput;
-
-  GIDFilterInput? get documentId;
-  GStringFilterInput? get tab_name;
-  GStringFilterInput? get type;
-  GProdutoFiltersInput? get produtos;
-  GDateTimeFilterInput? get createdAt;
-  GDateTimeFilterInput? get updatedAt;
-  GDateTimeFilterInput? get publishedAt;
-  BuiltList<GAbaFiltersInput?>? get and;
-  BuiltList<GAbaFiltersInput?>? get or;
-  GAbaFiltersInput? get not;
-  static Serializer<GAbaFiltersInput> get serializer =>
-      _$gAbaFiltersInputSerializer;
-
-  Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
-        GAbaFiltersInput.serializer,
-        this,
-      ) as Map<String, dynamic>);
-
-  static GAbaFiltersInput? fromJson(Map<String, dynamic> json) =>
-      _i2.serializers.deserializeWith(
-        GAbaFiltersInput.serializer,
-        json,
-      );
-}
-
-abstract class GAbaInput implements Built<GAbaInput, GAbaInputBuilder> {
-  GAbaInput._();
-
-  factory GAbaInput([void Function(GAbaInputBuilder b) updates]) = _$GAbaInput;
-
-  String? get tab_name;
-  GENUM_ABA_TYPE? get type;
-  BuiltList<String?>? get produtos;
-  GDateTime? get publishedAt;
-  static Serializer<GAbaInput> get serializer => _$gAbaInputSerializer;
-
-  Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
-        GAbaInput.serializer,
-        this,
-      ) as Map<String, dynamic>);
-
-  static GAbaInput? fromJson(Map<String, dynamic> json) =>
-      _i2.serializers.deserializeWith(
-        GAbaInput.serializer,
-        json,
-      );
-}
-
-abstract class GProdutoFiltersInput
-    implements Built<GProdutoFiltersInput, GProdutoFiltersInputBuilder> {
-  GProdutoFiltersInput._();
-
-  factory GProdutoFiltersInput(
-          [void Function(GProdutoFiltersInputBuilder b) updates]) =
-      _$GProdutoFiltersInput;
-
-  GIDFilterInput? get documentId;
-  GStringFilterInput? get name;
-  GStringFilterInput? get description;
-  GFloatFilterInput? get price;
-  GFloatFilterInput? get descounted_price;
-  GBooleanFilterInput? get is_optional;
-  GBooleanFilterInput? get is_multiselect;
-  GAbaFiltersInput? get abas;
-  GDateTimeFilterInput? get createdAt;
-  GDateTimeFilterInput? get updatedAt;
-  GDateTimeFilterInput? get publishedAt;
-  BuiltList<GProdutoFiltersInput?>? get and;
-  BuiltList<GProdutoFiltersInput?>? get or;
-  GProdutoFiltersInput? get not;
-  static Serializer<GProdutoFiltersInput> get serializer =>
-      _$gProdutoFiltersInputSerializer;
-
-  Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
-        GProdutoFiltersInput.serializer,
-        this,
-      ) as Map<String, dynamic>);
-
-  static GProdutoFiltersInput? fromJson(Map<String, dynamic> json) =>
-      _i2.serializers.deserializeWith(
-        GProdutoFiltersInput.serializer,
-        json,
-      );
-}
-
-abstract class GProdutoInput
-    implements Built<GProdutoInput, GProdutoInputBuilder> {
-  GProdutoInput._();
-
-  factory GProdutoInput([void Function(GProdutoInputBuilder b) updates]) =
-      _$GProdutoInput;
-
-  String? get name;
-  String? get description;
-  double? get price;
-  double? get descounted_price;
-  BuiltList<String?>? get images;
-  bool? get is_optional;
-  bool? get is_multiselect;
-  BuiltList<String?>? get abas;
-  GDateTime? get publishedAt;
-  static Serializer<GProdutoInput> get serializer => _$gProdutoInputSerializer;
-
-  Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
-        GProdutoInput.serializer,
-        this,
-      ) as Map<String, dynamic>);
-
-  static GProdutoInput? fromJson(Map<String, dynamic> json) =>
-      _i2.serializers.deserializeWith(
-        GProdutoInput.serializer,
-        json,
-      );
-}
-
-abstract class GSettingInput
-    implements Built<GSettingInput, GSettingInputBuilder> {
-  GSettingInput._();
-
-  factory GSettingInput([void Function(GSettingInputBuilder b) updates]) =
-      _$GSettingInput;
-
-  String? get banner;
-  String? get name;
-  String? get logo;
-  String? get color;
-  String? get address;
-  String? get phone_number;
-  String? get email;
-  GTime? get open_at;
-  GTime? get close_at;
-  GDateTime? get publishedAt;
-  static Serializer<GSettingInput> get serializer => _$gSettingInputSerializer;
-
-  Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
-        GSettingInput.serializer,
-        this,
-      ) as Map<String, dynamic>);
-
-  static GSettingInput? fromJson(Map<String, dynamic> json) =>
-      _i2.serializers.deserializeWith(
-        GSettingInput.serializer,
         json,
       );
 }
@@ -968,6 +761,185 @@ abstract class GUsersPermissionsUserInput
       );
 }
 
+abstract class GAbaFiltersInput
+    implements Built<GAbaFiltersInput, GAbaFiltersInputBuilder> {
+  GAbaFiltersInput._();
+
+  factory GAbaFiltersInput([void Function(GAbaFiltersInputBuilder b) updates]) =
+      _$GAbaFiltersInput;
+
+  GIDFilterInput? get documentId;
+  GStringFilterInput? get tab_name;
+  GProdutoFiltersInput? get produtos;
+  GIntFilterInput? get order;
+  GDateTimeFilterInput? get createdAt;
+  GDateTimeFilterInput? get updatedAt;
+  GDateTimeFilterInput? get publishedAt;
+  BuiltList<GAbaFiltersInput?>? get and;
+  BuiltList<GAbaFiltersInput?>? get or;
+  GAbaFiltersInput? get not;
+  static Serializer<GAbaFiltersInput> get serializer =>
+      _$gAbaFiltersInputSerializer;
+
+  Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
+        GAbaFiltersInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GAbaFiltersInput? fromJson(Map<String, dynamic> json) =>
+      _i2.serializers.deserializeWith(
+        GAbaFiltersInput.serializer,
+        json,
+      );
+}
+
+abstract class GAbaInput implements Built<GAbaInput, GAbaInputBuilder> {
+  GAbaInput._();
+
+  factory GAbaInput([void Function(GAbaInputBuilder b) updates]) = _$GAbaInput;
+
+  String? get tab_name;
+  BuiltList<String?>? get produtos;
+  int? get order;
+  GDateTime? get publishedAt;
+  static Serializer<GAbaInput> get serializer => _$gAbaInputSerializer;
+
+  Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
+        GAbaInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GAbaInput? fromJson(Map<String, dynamic> json) =>
+      _i2.serializers.deserializeWith(
+        GAbaInput.serializer,
+        json,
+      );
+}
+
+abstract class GExtraFiltersInput
+    implements Built<GExtraFiltersInput, GExtraFiltersInputBuilder> {
+  GExtraFiltersInput._();
+
+  factory GExtraFiltersInput(
+          [void Function(GExtraFiltersInputBuilder b) updates]) =
+      _$GExtraFiltersInput;
+
+  GIDFilterInput? get documentId;
+  GStringFilterInput? get name;
+  GFloatFilterInput? get price;
+  GBooleanFilterInput? get isAvailable;
+  GDateTimeFilterInput? get createdAt;
+  GDateTimeFilterInput? get updatedAt;
+  GDateTimeFilterInput? get publishedAt;
+  BuiltList<GExtraFiltersInput?>? get and;
+  BuiltList<GExtraFiltersInput?>? get or;
+  GExtraFiltersInput? get not;
+  static Serializer<GExtraFiltersInput> get serializer =>
+      _$gExtraFiltersInputSerializer;
+
+  Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
+        GExtraFiltersInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GExtraFiltersInput? fromJson(Map<String, dynamic> json) =>
+      _i2.serializers.deserializeWith(
+        GExtraFiltersInput.serializer,
+        json,
+      );
+}
+
+abstract class GExtraInput implements Built<GExtraInput, GExtraInputBuilder> {
+  GExtraInput._();
+
+  factory GExtraInput([void Function(GExtraInputBuilder b) updates]) =
+      _$GExtraInput;
+
+  String? get name;
+  double? get price;
+  bool? get isAvailable;
+  GDateTime? get publishedAt;
+  static Serializer<GExtraInput> get serializer => _$gExtraInputSerializer;
+
+  Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
+        GExtraInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GExtraInput? fromJson(Map<String, dynamic> json) =>
+      _i2.serializers.deserializeWith(
+        GExtraInput.serializer,
+        json,
+      );
+}
+
+abstract class GProdutoFiltersInput
+    implements Built<GProdutoFiltersInput, GProdutoFiltersInputBuilder> {
+  GProdutoFiltersInput._();
+
+  factory GProdutoFiltersInput(
+          [void Function(GProdutoFiltersInputBuilder b) updates]) =
+      _$GProdutoFiltersInput;
+
+  GIDFilterInput? get documentId;
+  GStringFilterInput? get name;
+  GStringFilterInput? get description;
+  GFloatFilterInput? get price;
+  GFloatFilterInput? get descounted_price;
+  GBooleanFilterInput? get is_optional;
+  GBooleanFilterInput? get is_multiselect;
+  GAbaFiltersInput? get abas;
+  GDateTimeFilterInput? get createdAt;
+  GDateTimeFilterInput? get updatedAt;
+  GDateTimeFilterInput? get publishedAt;
+  BuiltList<GProdutoFiltersInput?>? get and;
+  BuiltList<GProdutoFiltersInput?>? get or;
+  GProdutoFiltersInput? get not;
+  static Serializer<GProdutoFiltersInput> get serializer =>
+      _$gProdutoFiltersInputSerializer;
+
+  Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
+        GProdutoFiltersInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProdutoFiltersInput? fromJson(Map<String, dynamic> json) =>
+      _i2.serializers.deserializeWith(
+        GProdutoFiltersInput.serializer,
+        json,
+      );
+}
+
+abstract class GProdutoInput
+    implements Built<GProdutoInput, GProdutoInputBuilder> {
+  GProdutoInput._();
+
+  factory GProdutoInput([void Function(GProdutoInputBuilder b) updates]) =
+      _$GProdutoInput;
+
+  String? get name;
+  String? get description;
+  double? get price;
+  double? get descounted_price;
+  BuiltList<String?>? get images;
+  bool? get is_optional;
+  bool? get is_multiselect;
+  BuiltList<String?>? get abas;
+  GDateTime? get publishedAt;
+  static Serializer<GProdutoInput> get serializer => _$gProdutoInputSerializer;
+
+  Map<String, dynamic> toJson() => (_i2.serializers.serializeWith(
+        GProdutoInput.serializer,
+        this,
+      ) as Map<String, dynamic>);
+
+  static GProdutoInput? fromJson(Map<String, dynamic> json) =>
+      _i2.serializers.deserializeWith(
+        GProdutoInput.serializer,
+        json,
+      );
+}
+
 abstract class GFileInfoInput
     implements Built<GFileInfoInput, GFileInfoInputBuilder> {
   GFileInfoInput._();
@@ -1076,9 +1048,6 @@ abstract class GPaginationArg
 
 const Map<String, Set<String>> possibleTypesMap = {
   'GenericMorph': {
-    'Aba',
-    'Produto',
-    'Setting',
     'UploadFile',
     'I18NLocale',
     'ReviewWorkflowsWorkflow',
@@ -1086,5 +1055,8 @@ const Map<String, Set<String>> possibleTypesMap = {
     'UsersPermissionsPermission',
     'UsersPermissionsRole',
     'UsersPermissionsUser',
+    'Aba',
+    'Extra',
+    'Produto',
   }
 };

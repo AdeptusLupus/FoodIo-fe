@@ -18,10 +18,6 @@ const DateTime = _i1.ScalarTypeDefinitionNode(
   name: _i1.NameNode(value: 'DateTime'),
   directives: [],
 );
-const Time = _i1.ScalarTypeDefinitionNode(
-  name: _i1.NameNode(value: 'Time'),
-  directives: [],
-);
 const Pagination = _i1.ObjectTypeDefinitionNode(
   name: _i1.NameNode(value: 'Pagination'),
   directives: [],
@@ -1625,1171 +1621,6 @@ const JSONFilterInput = _i1.InputObjectTypeDefinitionNode(
         isNonNull: false,
       ),
       defaultValue: null,
-    ),
-  ],
-);
-const ENUM_ABA_TYPE = _i1.EnumTypeDefinitionNode(
-  name: _i1.NameNode(value: 'ENUM_ABA_TYPE'),
-  directives: [],
-  values: [
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Escolhido_a_mao'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Promocoes'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Pratos_Principais'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Entradas'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Acompanhamentos'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Combo'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Burgers'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Pizzas_Grandes'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Pizzas_Medias'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Pizzas_Pequenas'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Pizzas_Tradicionais'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Bebidas'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Novos'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Recentes'),
-      directives: [],
-    ),
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'Outros'),
-      directives: [],
-    ),
-  ],
-);
-const AbaFiltersInput = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'AbaFiltersInput'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'documentId'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'IDFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'tab_name'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'StringFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'type'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'StringFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'produtos'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ProdutoFiltersInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'createdAt'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTimeFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'updatedAt'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTimeFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'publishedAt'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTimeFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'and'),
-      directives: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'AbaFiltersInput'),
-          isNonNull: false,
-        ),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'or'),
-      directives: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'AbaFiltersInput'),
-          isNonNull: false,
-        ),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'not'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'AbaFiltersInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-  ],
-);
-const AbaInput = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'AbaInput'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'tab_name'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'type'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ENUM_ABA_TYPE'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'produtos'),
-      directives: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'ID'),
-          isNonNull: false,
-        ),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'publishedAt'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-  ],
-);
-const Aba = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'Aba'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'documentId'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ID'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'tab_name'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'type'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ENUM_ABA_TYPE'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'produtos_connection'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'filters'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ProdutoFiltersInput'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'pagination'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PaginationArg'),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ObjectValueNode(fields: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'sort'),
-          directives: [],
-          type: _i1.ListTypeNode(
-            type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'String'),
-              isNonNull: false,
-            ),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ListValueNode(values: []),
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ProdutoRelationResponseCollection'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'produtos'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'filters'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ProdutoFiltersInput'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'pagination'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PaginationArg'),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ObjectValueNode(fields: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'sort'),
-          directives: [],
-          type: _i1.ListTypeNode(
-            type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'String'),
-              isNonNull: false,
-            ),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ListValueNode(values: []),
-        ),
-      ],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'Produto'),
-          isNonNull: false,
-        ),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'createdAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'updatedAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'publishedAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-    ),
-  ],
-);
-const AbaEntityResponseCollection = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'AbaEntityResponseCollection'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'nodes'),
-      directives: [],
-      args: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'Aba'),
-          isNonNull: true,
-        ),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'pageInfo'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Pagination'),
-        isNonNull: true,
-      ),
-    ),
-  ],
-);
-const AbaRelationResponseCollection = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'AbaRelationResponseCollection'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'nodes'),
-      directives: [],
-      args: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'Aba'),
-          isNonNull: true,
-        ),
-        isNonNull: true,
-      ),
-    )
-  ],
-);
-const ProdutoFiltersInput = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'ProdutoFiltersInput'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'documentId'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'IDFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'name'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'StringFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'description'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'StringFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'price'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'FloatFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'descounted_price'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'FloatFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'is_optional'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'BooleanFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'is_multiselect'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'BooleanFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'abas'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'AbaFiltersInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'createdAt'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTimeFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'updatedAt'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTimeFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'publishedAt'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTimeFilterInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'and'),
-      directives: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'ProdutoFiltersInput'),
-          isNonNull: false,
-        ),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'or'),
-      directives: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'ProdutoFiltersInput'),
-          isNonNull: false,
-        ),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'not'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ProdutoFiltersInput'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-  ],
-);
-const ProdutoInput = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'ProdutoInput'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'name'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'description'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'price'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Float'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'descounted_price'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Float'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'images'),
-      directives: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'ID'),
-          isNonNull: false,
-        ),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'is_optional'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'is_multiselect'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'abas'),
-      directives: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'ID'),
-          isNonNull: false,
-        ),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'publishedAt'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-  ],
-);
-const Produto = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'Produto'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'documentId'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ID'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'name'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'description'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'price'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Float'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'descounted_price'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Float'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'images_connection'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'filters'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'UploadFileFiltersInput'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'pagination'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PaginationArg'),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ObjectValueNode(fields: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'sort'),
-          directives: [],
-          type: _i1.ListTypeNode(
-            type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'String'),
-              isNonNull: false,
-            ),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ListValueNode(values: []),
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'UploadFileRelationResponseCollection'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'images'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'filters'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'UploadFileFiltersInput'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'pagination'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PaginationArg'),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ObjectValueNode(fields: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'sort'),
-          directives: [],
-          type: _i1.ListTypeNode(
-            type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'String'),
-              isNonNull: false,
-            ),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ListValueNode(values: []),
-        ),
-      ],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'UploadFile'),
-          isNonNull: false,
-        ),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'is_optional'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'is_multiselect'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'abas_connection'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'filters'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'AbaFiltersInput'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'pagination'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PaginationArg'),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ObjectValueNode(fields: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'sort'),
-          directives: [],
-          type: _i1.ListTypeNode(
-            type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'String'),
-              isNonNull: false,
-            ),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ListValueNode(values: []),
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'AbaRelationResponseCollection'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'abas'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'filters'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'AbaFiltersInput'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'pagination'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PaginationArg'),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ObjectValueNode(fields: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'sort'),
-          directives: [],
-          type: _i1.ListTypeNode(
-            type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'String'),
-              isNonNull: false,
-            ),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ListValueNode(values: []),
-        ),
-      ],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'Aba'),
-          isNonNull: false,
-        ),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'createdAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'updatedAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'publishedAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-    ),
-  ],
-);
-const ProdutoEntityResponseCollection = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'ProdutoEntityResponseCollection'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'nodes'),
-      directives: [],
-      args: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'Produto'),
-          isNonNull: true,
-        ),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'pageInfo'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Pagination'),
-        isNonNull: true,
-      ),
-    ),
-  ],
-);
-const ProdutoRelationResponseCollection = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'ProdutoRelationResponseCollection'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'nodes'),
-      directives: [],
-      args: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'Produto'),
-          isNonNull: true,
-        ),
-        isNonNull: true,
-      ),
-    )
-  ],
-);
-const SettingInput = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'SettingInput'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'banner'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ID'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'name'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'logo'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ID'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'color'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'address'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'phone_number'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'email'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'open_at'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Time'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'close_at'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Time'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'publishedAt'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-  ],
-);
-const Setting = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'Setting'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'documentId'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ID'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'banner'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'UploadFile'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'name'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'logo'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'UploadFile'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'color'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'address'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'phone_number'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'email'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'open_at'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Time'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'close_at'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Time'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'createdAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'updatedAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'publishedAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
     ),
   ],
 );
@@ -5018,22 +3849,1131 @@ const UsersPermissionsUserRelationResponseCollection =
     )
   ],
 );
+const AbaFiltersInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'AbaFiltersInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'documentId'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'IDFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'tab_name'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'StringFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'produtos'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'ProdutoFiltersInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'order'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'IntFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'createdAt'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTimeFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'updatedAt'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTimeFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'publishedAt'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTimeFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'and'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'AbaFiltersInput'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'or'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'AbaFiltersInput'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'not'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'AbaFiltersInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
+const AbaInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'AbaInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'tab_name'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'produtos'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'ID'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'order'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Int'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'publishedAt'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTime'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
+const Aba = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'Aba'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'documentId'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'ID'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'tab_name'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'produtos_connection'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'filters'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ProdutoFiltersInput'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'pagination'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PaginationArg'),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ObjectValueNode(fields: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'sort'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'String'),
+              isNonNull: false,
+            ),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ListValueNode(values: []),
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'ProdutoRelationResponseCollection'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'produtos'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'filters'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ProdutoFiltersInput'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'pagination'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PaginationArg'),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ObjectValueNode(fields: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'sort'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'String'),
+              isNonNull: false,
+            ),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ListValueNode(values: []),
+        ),
+      ],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'Produto'),
+          isNonNull: false,
+        ),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'order'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Int'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'createdAt'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTime'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'updatedAt'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTime'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'publishedAt'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTime'),
+        isNonNull: false,
+      ),
+    ),
+  ],
+);
+const AbaEntityResponseCollection = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'AbaEntityResponseCollection'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'nodes'),
+      directives: [],
+      args: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'Aba'),
+          isNonNull: true,
+        ),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'pageInfo'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Pagination'),
+        isNonNull: true,
+      ),
+    ),
+  ],
+);
+const AbaRelationResponseCollection = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'AbaRelationResponseCollection'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'nodes'),
+      directives: [],
+      args: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'Aba'),
+          isNonNull: true,
+        ),
+        isNonNull: true,
+      ),
+    )
+  ],
+);
+const ExtraFiltersInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'ExtraFiltersInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'documentId'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'IDFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'name'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'StringFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'price'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'FloatFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'isAvailable'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'BooleanFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'createdAt'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTimeFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'updatedAt'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTimeFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'publishedAt'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTimeFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'and'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'ExtraFiltersInput'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'or'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'ExtraFiltersInput'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'not'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'ExtraFiltersInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
+const ExtraInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'ExtraInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'name'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'price'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Float'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'isAvailable'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'publishedAt'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTime'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
+const Extra = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'Extra'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'documentId'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'ID'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'name'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'price'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Float'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'isAvailable'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'createdAt'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTime'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'updatedAt'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTime'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'publishedAt'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTime'),
+        isNonNull: false,
+      ),
+    ),
+  ],
+);
+const ExtraEntityResponseCollection = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'ExtraEntityResponseCollection'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'nodes'),
+      directives: [],
+      args: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'Extra'),
+          isNonNull: true,
+        ),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'pageInfo'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Pagination'),
+        isNonNull: true,
+      ),
+    ),
+  ],
+);
+const ProdutoFiltersInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'ProdutoFiltersInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'documentId'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'IDFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'name'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'StringFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'description'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'StringFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'price'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'FloatFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'descounted_price'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'FloatFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'is_optional'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'BooleanFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'is_multiselect'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'BooleanFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'abas'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'AbaFiltersInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'createdAt'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTimeFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'updatedAt'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTimeFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'publishedAt'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTimeFilterInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'and'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'ProdutoFiltersInput'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'or'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'ProdutoFiltersInput'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'not'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'ProdutoFiltersInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
+const ProdutoInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'ProdutoInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'name'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'description'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'price'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Float'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'descounted_price'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Float'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'images'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'ID'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'is_optional'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'is_multiselect'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'abas'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'ID'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'publishedAt'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTime'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
+const Produto = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'Produto'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'documentId'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'ID'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'name'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'description'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'price'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Float'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'descounted_price'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Float'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'images_connection'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'filters'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'UploadFileFiltersInput'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'pagination'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PaginationArg'),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ObjectValueNode(fields: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'sort'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'String'),
+              isNonNull: false,
+            ),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ListValueNode(values: []),
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'UploadFileRelationResponseCollection'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'images'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'filters'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'UploadFileFiltersInput'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'pagination'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PaginationArg'),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ObjectValueNode(fields: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'sort'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'String'),
+              isNonNull: false,
+            ),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ListValueNode(values: []),
+        ),
+      ],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'UploadFile'),
+          isNonNull: false,
+        ),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'is_optional'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'is_multiselect'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'abas_connection'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'filters'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'AbaFiltersInput'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'pagination'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PaginationArg'),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ObjectValueNode(fields: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'sort'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'String'),
+              isNonNull: false,
+            ),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ListValueNode(values: []),
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'AbaRelationResponseCollection'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'abas'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'filters'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'AbaFiltersInput'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'pagination'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PaginationArg'),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ObjectValueNode(fields: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'sort'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'String'),
+              isNonNull: false,
+            ),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ListValueNode(values: []),
+        ),
+      ],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'Aba'),
+          isNonNull: false,
+        ),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'createdAt'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTime'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'updatedAt'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTime'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'publishedAt'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DateTime'),
+        isNonNull: false,
+      ),
+    ),
+  ],
+);
+const ProdutoEntityResponseCollection = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'ProdutoEntityResponseCollection'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'nodes'),
+      directives: [],
+      args: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'Produto'),
+          isNonNull: true,
+        ),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'pageInfo'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Pagination'),
+        isNonNull: true,
+      ),
+    ),
+  ],
+);
+const ProdutoRelationResponseCollection = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'ProdutoRelationResponseCollection'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'nodes'),
+      directives: [],
+      args: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'Produto'),
+          isNonNull: true,
+        ),
+        isNonNull: true,
+      ),
+    )
+  ],
+);
 const GenericMorph = _i1.UnionTypeDefinitionNode(
   name: _i1.NameNode(value: 'GenericMorph'),
   directives: [],
   types: [
-    _i1.NamedTypeNode(
-      name: _i1.NameNode(value: 'Aba'),
-      isNonNull: false,
-    ),
-    _i1.NamedTypeNode(
-      name: _i1.NameNode(value: 'Produto'),
-      isNonNull: false,
-    ),
-    _i1.NamedTypeNode(
-      name: _i1.NameNode(value: 'Setting'),
-      isNonNull: false,
-    ),
     _i1.NamedTypeNode(
       name: _i1.NameNode(value: 'UploadFile'),
       isNonNull: false,
@@ -5060,6 +5000,18 @@ const GenericMorph = _i1.UnionTypeDefinitionNode(
     ),
     _i1.NamedTypeNode(
       name: _i1.NameNode(value: 'UsersPermissionsUser'),
+      isNonNull: false,
+    ),
+    _i1.NamedTypeNode(
+      name: _i1.NameNode(value: 'Aba'),
+      isNonNull: false,
+    ),
+    _i1.NamedTypeNode(
+      name: _i1.NameNode(value: 'Extra'),
+      isNonNull: false,
+    ),
+    _i1.NamedTypeNode(
+      name: _i1.NameNode(value: 'Produto'),
       isNonNull: false,
     ),
   ],
@@ -5415,290 +5367,6 @@ const Query = _i1.ObjectTypeDefinitionNode(
   directives: [],
   interfaces: [],
   fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'aba'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'documentId'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ID'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'status'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PublicationStatus'),
-            isNonNull: false,
-          ),
-          defaultValue:
-              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Aba'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'abas_connection'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'filters'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'AbaFiltersInput'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'pagination'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PaginationArg'),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ObjectValueNode(fields: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'sort'),
-          directives: [],
-          type: _i1.ListTypeNode(
-            type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'String'),
-              isNonNull: false,
-            ),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ListValueNode(values: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'status'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PublicationStatus'),
-            isNonNull: false,
-          ),
-          defaultValue:
-              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'AbaEntityResponseCollection'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'abas'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'filters'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'AbaFiltersInput'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'pagination'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PaginationArg'),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ObjectValueNode(fields: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'sort'),
-          directives: [],
-          type: _i1.ListTypeNode(
-            type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'String'),
-              isNonNull: false,
-            ),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ListValueNode(values: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'status'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PublicationStatus'),
-            isNonNull: false,
-          ),
-          defaultValue:
-              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
-        ),
-      ],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'Aba'),
-          isNonNull: false,
-        ),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'produto'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'documentId'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ID'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'status'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PublicationStatus'),
-            isNonNull: false,
-          ),
-          defaultValue:
-              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Produto'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'produtos_connection'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'filters'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ProdutoFiltersInput'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'pagination'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PaginationArg'),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ObjectValueNode(fields: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'sort'),
-          directives: [],
-          type: _i1.ListTypeNode(
-            type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'String'),
-              isNonNull: false,
-            ),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ListValueNode(values: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'status'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PublicationStatus'),
-            isNonNull: false,
-          ),
-          defaultValue:
-              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ProdutoEntityResponseCollection'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'produtos'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'filters'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ProdutoFiltersInput'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'pagination'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PaginationArg'),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ObjectValueNode(fields: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'sort'),
-          directives: [],
-          type: _i1.ListTypeNode(
-            type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'String'),
-              isNonNull: false,
-            ),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ListValueNode(values: []),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'status'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PublicationStatus'),
-            isNonNull: false,
-          ),
-          defaultValue:
-              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
-        ),
-      ],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'Produto'),
-          isNonNull: false,
-        ),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'setting'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'status'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PublicationStatus'),
-            isNonNull: false,
-          ),
-          defaultValue:
-              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
-        )
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Setting'),
-        isNonNull: false,
-      ),
-    ),
     _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'uploadFile'),
       directives: [],
@@ -6498,6 +6166,402 @@ const Query = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'aba'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'documentId'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ID'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Aba'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'abas_connection'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'filters'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'AbaFiltersInput'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'pagination'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PaginationArg'),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ObjectValueNode(fields: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'sort'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'String'),
+              isNonNull: false,
+            ),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ListValueNode(values: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'AbaEntityResponseCollection'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'abas'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'filters'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'AbaFiltersInput'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'pagination'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PaginationArg'),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ObjectValueNode(fields: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'sort'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'String'),
+              isNonNull: false,
+            ),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ListValueNode(values: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+      ],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'Aba'),
+          isNonNull: false,
+        ),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'extra'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'documentId'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ID'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Extra'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'extras_connection'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'filters'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ExtraFiltersInput'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'pagination'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PaginationArg'),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ObjectValueNode(fields: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'sort'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'String'),
+              isNonNull: false,
+            ),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ListValueNode(values: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'ExtraEntityResponseCollection'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'extras'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'filters'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ExtraFiltersInput'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'pagination'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PaginationArg'),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ObjectValueNode(fields: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'sort'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'String'),
+              isNonNull: false,
+            ),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ListValueNode(values: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+      ],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'Extra'),
+          isNonNull: false,
+        ),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'produto'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'documentId'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ID'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Produto'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'produtos_connection'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'filters'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ProdutoFiltersInput'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'pagination'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PaginationArg'),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ObjectValueNode(fields: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'sort'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'String'),
+              isNonNull: false,
+            ),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ListValueNode(values: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'ProdutoEntityResponseCollection'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'produtos'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'filters'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ProdutoFiltersInput'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'pagination'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PaginationArg'),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ObjectValueNode(fields: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'sort'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'String'),
+              isNonNull: false,
+            ),
+            isNonNull: false,
+          ),
+          defaultValue: _i1.ListValueNode(values: []),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+      ],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'Produto'),
+          isNonNull: false,
+        ),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'me'),
       directives: [],
       args: [],
@@ -6513,216 +6577,6 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
   directives: [],
   interfaces: [],
   fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'createAba'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'status'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PublicationStatus'),
-            isNonNull: false,
-          ),
-          defaultValue:
-              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'data'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'AbaInput'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Aba'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'updateAba'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'documentId'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ID'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'status'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PublicationStatus'),
-            isNonNull: false,
-          ),
-          defaultValue:
-              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'data'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'AbaInput'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Aba'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'deleteAba'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'documentId'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ID'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        )
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DeleteMutationResponse'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'createProduto'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'status'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PublicationStatus'),
-            isNonNull: false,
-          ),
-          defaultValue:
-              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'data'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ProdutoInput'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Produto'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'updateProduto'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'documentId'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ID'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'status'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PublicationStatus'),
-            isNonNull: false,
-          ),
-          defaultValue:
-              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'data'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ProdutoInput'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Produto'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'deleteProduto'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'documentId'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ID'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        )
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DeleteMutationResponse'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'updateSetting'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'status'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'PublicationStatus'),
-            isNonNull: false,
-          ),
-          defaultValue:
-              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'data'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'SettingInput'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Setting'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'deleteSetting'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DeleteMutationResponse'),
-        isNonNull: false,
-      ),
-    ),
     _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'createReviewWorkflowsWorkflow'),
       directives: [],
@@ -6878,6 +6732,264 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
     ),
     _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'deleteReviewWorkflowsWorkflowStage'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'documentId'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ID'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        )
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DeleteMutationResponse'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'createAba'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'data'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'AbaInput'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Aba'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'updateAba'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'documentId'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ID'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'data'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'AbaInput'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Aba'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'deleteAba'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'documentId'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ID'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        )
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DeleteMutationResponse'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'createExtra'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'data'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ExtraInput'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Extra'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'updateExtra'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'documentId'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ID'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'data'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ExtraInput'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Extra'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'deleteExtra'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'documentId'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ID'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        )
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DeleteMutationResponse'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'createProduto'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'data'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ProdutoInput'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Produto'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'updateProduto'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'documentId'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ID'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'status'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PublicationStatus'),
+            isNonNull: false,
+          ),
+          defaultValue:
+              _i1.EnumValueNode(name: _i1.NameNode(value: 'PUBLISHED')),
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'data'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ProdutoInput'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Produto'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'deleteProduto'),
       directives: [],
       args: [
         _i1.InputValueDefinitionNode(
@@ -7230,7 +7342,6 @@ const document = _i1.DocumentNode(definitions: [
   oneOf,
   JSON,
   DateTime,
-  Time,
   Pagination,
   DeleteMutationResponse,
   PublicationStatus,
@@ -7241,19 +7352,6 @@ const document = _i1.DocumentNode(definitions: [
   FloatFilterInput,
   DateTimeFilterInput,
   JSONFilterInput,
-  ENUM_ABA_TYPE,
-  AbaFiltersInput,
-  AbaInput,
-  Aba,
-  AbaEntityResponseCollection,
-  AbaRelationResponseCollection,
-  ProdutoFiltersInput,
-  ProdutoInput,
-  Produto,
-  ProdutoEntityResponseCollection,
-  ProdutoRelationResponseCollection,
-  SettingInput,
-  Setting,
   UploadFileFiltersInput,
   UploadFile,
   UploadFileEntityResponseCollection,
@@ -7283,6 +7381,20 @@ const document = _i1.DocumentNode(definitions: [
   UsersPermissionsUserEntityResponse,
   UsersPermissionsUserEntityResponseCollection,
   UsersPermissionsUserRelationResponseCollection,
+  AbaFiltersInput,
+  AbaInput,
+  Aba,
+  AbaEntityResponseCollection,
+  AbaRelationResponseCollection,
+  ExtraFiltersInput,
+  ExtraInput,
+  Extra,
+  ExtraEntityResponseCollection,
+  ProdutoFiltersInput,
+  ProdutoInput,
+  Produto,
+  ProdutoEntityResponseCollection,
+  ProdutoRelationResponseCollection,
   GenericMorph,
   FileInfoInput,
   UsersPermissionsMe,

@@ -1,7 +1,6 @@
 query HomeTabsAndProducts {
   abas(sort: ["order:asc", "id:asc"]) {
     tab_name
-    type
     produtos {
       name
       description

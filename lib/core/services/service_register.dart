@@ -1,3 +1,4 @@
+import 'package:foodio/ui/pages/home/bloc/home_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hive_flutter/adapters.dart';
 
@@ -10,4 +11,6 @@ Future<void> registerServices() async {
     final Box box = await Hive.openBox('GraphQlCacheBox');
     return box;
   }));
+
+  serviceRegister.registerSingleton<HomeBloc>(HomeBloc());
 }
